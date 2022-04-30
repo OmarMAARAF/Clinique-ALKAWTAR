@@ -1,0 +1,70 @@
+/*--------------------
+    Tabs
+--------------------*/
+.nav-tabs {
+    border-bottom: none;
+
+    .nav__link {
+        display: block;
+        position: relative;
+        padding-bottom: 10px;
+        margin: 0 30px 0 0;
+        text-transform: capitalize;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 16px;
+        color: $color-secondary;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-primary;
+            @include prefix(transform, scale3d(0, 1, 1), webkit moz ms o);
+            @include prefix(transform-origin, 100% 50%, webkit moz ms o);
+            @include prefix(transition, transform 2s cubic-bezier(0.2, 1, 0.3, 1), webkit moz ms o);
+        }
+
+        &.active,
+        &:hover {
+            color: $color-primary;
+
+            &:after {
+                @include prefix(transform, scale3d(1, 1, 1), webkit moz ms o);
+                @include prefix(transform-origin, 0 50%, webkit moz ms o);
+            }
+        }
+    }
+}
+
+.nav-tabs-white .nav__link {
+    color: $color-white;
+
+    &.active,
+    &:hover {
+        color: $color-white;
+    }
+
+    &:after {
+        background-color: #fff;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .nav-tabs .nav__link {
+        font-size: 13px;
+        margin: 0 15px 0 0;
+
+        &:after {
+            bottom: 4px;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+/*-------------------------
+   Background & Colors
+--------------------------*/
+
+/* Colors */
+.color-white {
+    color: $color-white !important;
+}
+
+.color-white-hover:hover {
+    color: $color-white !important;
+}
+
+.color-gray {
+    color: $color-gray !important;
+}
+
+.color-dark {
+    color: $color-dark !important;
+}
+
+.color-primary {
+    color: $color-primary !important;
+}
+
+.color-secondary {
+    color: $color-secondary !important;
+}
+
+.color-heading {
+    color: $color-heading !important;
+}
+
+.color-body {
+    color: $color-body !important;
+}
+
+/* backgrounds */
+
+.bg-white {
+    background-color: $color-white !important;
+}
+
+.bg-gray {
+    background-color: $color-gray !important;
+}
+
+.bg-dark {
+    background-color: $color-dark !important;
+}
+
+.bg-heading {
+    background-color: $color-heading !important;
+}
+
+.bg-primary {
+    background-color: $color-primary !important;
+}
+
+.bg-secondary {
+    background-color: $color-secondary !important;
+}
+
+.bg-light-blue {
+    background-color: #3851a2 !important;
+}
+
+.bg-img {
+    position: relative;
+    z-index: 1;
+}
+
+.background-size-auto {
+    background-size: auto !important;
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+.bg-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(#1b1a1a, 0.25);
+}
+
+.bg-overlay-2:before {
+    background-color: rgba(#1b1a1a, 0.15);
+}
+
+.bg-overlay-3:before {
+    background-color: rgba(#1b1a1a, 0.05);
+}
+
+.bg-overlay-gradient:before {
+    background-color: transparent;
+    opacity: 0.65;
+    background-image: linear-gradient(180deg, #010711 0%, rgba(27, 26, 26, 0.65) 34%);
+}
+
+.bg-overlay-secondary:before {
+    background-color: rgba($color-secondary, 0.93);
+}
+
+.bg-overlay-primary:before {
+    background-color: rgba($color-primary, 0.85);
+}
+
+.bg-overlay-primary-gradient:before {
+    opacity: 0.95;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #21CDC0F2 19%, #21CDC0 71%);
+}
+
+.bg-overlay-secondary-gradient:before {
+    opacity: 0.95;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #061733 19%, #061733 71%);
+}
+
+.bg-overlay-blue-gradient:before {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #3851A2E6 21%, #263B72 86%);
+}

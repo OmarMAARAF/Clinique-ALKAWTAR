@@ -1,0 +1,14 @@
+/*------------------------
+    Alerts
+--------------------------*/
+.alert-primary {
+    padding: 30px;
+    color: $color-primary;
+    background-color: #def8f6;
+    border-color: transparent;
+    border-radius: 15px;
+
+    .alert__title {
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,63 @@
+/*------------------- 
+    Icons
+------------------*/
+.social-icons {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+
+    li {
+        margin-right: 10px;
+
+        a {
+            position: relative;
+            z-index: 2;
+            display: block;
+            width: 23px;
+            height: 23px;
+            line-height: 23px;
+            border-radius: 50%;
+            font-size: 12px;
+            text-align: center;
+            color: $color-white;
+            background-color: $color-secondary;
+            @include prefix(transition, all 0.4s linear, webkit moz o);
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &-light {
+        li a {
+            color: $color-white;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &-primary {
+        li a {
+            color: $color-primary;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
+
+.icon-arrow-right {
+    font-size: 65%;
+}

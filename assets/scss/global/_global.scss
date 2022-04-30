@@ -1,0 +1,143 @@
+/*--------------------------
+    Project Name: Medcity
+    Version: 1.0
+    Author: 7oorof
+    Relase Date: April 2021
+---------------------------*/
+/*---------------------------
+      Table of Contents
+    -------------------------
+    
+    01- Global Styles
+    02- Helper Classes
+    03- Background & Colors
+    04- Typography
+    05- page title 
+    06- Buttons
+    07- Forms
+    08- Tabs
+    09- Icons
+    10- Breadcrumb
+    11- Pagination
+    12- Lists
+    13- Animations
+    14- Alerts
+    16- Carousel
+    17- Preloader
+    18- Header & Navbar 
+    19- Accordions
+    20- Banners
+    21- Footer
+    22- Call to Action
+    23- Carousel 
+    24- Slider
+    26- Video
+    27- Features
+    28- Fancybox
+    29- Team
+    30- Testimonials
+    31- Clients
+    32- Blog
+    33- Contact
+    34- Pricing
+    35- Sidebar
+    36- About
+    36- Services
+    37- Timeline
+    38- Gallery
+    39- Shop
+    40- Work Process
+    41- Progress Bars
+    
+----------------------------*/
+
+/*-------------------------- 
+      Global Styles
+---------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $color-white;
+    font-family: $font-body;
+    font-size: $body-font-size;
+    color: $color-body;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+a {
+    color: $color-primary;
+    @include prefix(transition, color .3s ease, webkit moz ms o);
+
+    &:hover {
+        color: $color-secondary;
+        text-decoration: none;
+    }
+}
+
+section {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-------------------------
+     RESET Default Styles
+ --------------------------*/
+* {
+    outline: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+select {
+    background-color: transparent;
+}
+
+button,
+button:focus,
+.form-control,
+.form-control:focus {
+    outline: none;
+    @include prefix(box-shadow, none, webkit moz ms o);
+}
+
+textarea {
+    resize: none
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}

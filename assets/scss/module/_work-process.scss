@@ -1,0 +1,155 @@
+/*-------------------------
+    Work Process
+-------------------------*/
+.process-item {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: $color-white;
+    @include prefix(transition, all 0.3s ease, webkit moz ms o);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        bottom: 40px;
+        left: 0;
+        width: 3px;
+        background-color: $color-primary;
+        @include prefix(transform, scale(0), webkit moz ms o);
+        @include prefix(transition, transform 0.4s linear, webkit moz ms o);
+    }
+
+    .process__number {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-family: $font-heading;
+        font-size: 104px;
+        font-weight: 700;
+        line-height: 1;
+        color: #eaedf5;
+    }
+
+    .process__icon {
+        position: relative;
+        color: #354f8e;
+        font-size: 55px;
+        margin-bottom: 10px;
+        @include prefix(transition, color 0.4s linear, webkit moz ms o);
+    }
+
+    .process__title {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+
+    .process__desc {
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        box-shadow: 0px 5px 83px 0px rgba(9, 29, 62, 0.15);
+        @include prefix(transform, translateY(-20px), webkit moz ms o);
+
+        &:before {
+            @include prefix(transform, scale(1), webkit moz ms o);
+        }
+
+        .process__icon {
+            color: $color-primary;
+        }
+    }
+}
+
+.work-process {
+    .slick-list {
+        margin: -15px;
+        overflow: visible;
+    }
+
+    .slick-slide {
+        margin: 15px;
+        @include prefix(transition, all 0.3s ease, webkit moz ms o);
+
+        &.slick-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:not(.slick-active) {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .cta {
+        padding-top: 140px;
+        padding-bottom: 70px;
+        margin-top: -70px;
+
+        .cta__title {
+            color: $color-white;
+            font-size: 27px;
+        }
+
+        .cta__desc {
+            font-size: 16px;
+            color: $color-white;
+        }
+
+        .btn:not(.btn__link) {
+            height: 50px;
+        }
+    }
+}
+
+@media (min-width:1500px) {
+    .work-process {
+        .carousel-container {
+            margin-right: -200px;
+        }
+
+        .process-item .process__title {
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .work-process {
+        .carousel-container {
+            margin-right: -140px;
+        }
+
+        .cta {
+            .cta__title {
+                padding: 0 30px;
+            }
+
+            .cta__desc {
+                padding: 0 30px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .process-item {
+        padding: 20px;
+
+        &:before {
+            top: 20px;
+            bottom: 20px;
+        }
+
+        .process__number {
+            top: 20px;
+            right: 20px;
+            font-size: 50px;
+        }
+    }
+}

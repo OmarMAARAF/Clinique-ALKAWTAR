@@ -1,0 +1,131 @@
+/*-----------------------
+     fancybox 
+------------------------*/
+.fancybox-item {
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    @include prefix(transition, all 0.3s linear, webkit moz ms o);
+
+    .fancybox__icon {
+        font-size: 50px;
+        line-height: 1;
+        color: $color-primary;
+    }
+
+    .fancybox__title {
+        font-size: 19px;
+        margin-bottom: 16px;
+    }
+
+    .fancybox__desc {
+        margin-bottom: 0;
+    }
+
+    .fancybox__icon,
+    .fancybox__title,
+    .fancybox__desc {
+        @include prefix(transition, all 0.3s linear, webkit moz ms o);
+    }
+
+    &:hover {
+        .fancybox__icon {
+            @include animation("zoomOut 1s infinite alternate");
+        }
+
+        .fancybox__title {
+            color: $color-primary;
+        }
+    }
+}
+
+.fancybox-layout1,
+.fancybox-layout2 {
+    .fancybox-item {
+        padding: 40px;
+        border: 2px solid #e6e8eb;
+
+        .fancybox__icon {
+            flex: 0 0 70px;
+        }
+    }
+}
+
+.fancybox-layout1 {
+    .fancybox-item {
+        &:hover {
+            border-color: $color-white;
+            box-shadow: 0px 5px 83px 0px rgba(9, 29, 62, 0.15);
+        }
+    }
+}
+
+.fancybox-layout2 {
+    .fancybox-item {
+        padding: 30px;
+
+        .fancybox__title {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        &:hover {
+            border-color: $color-primary;
+            background-color: $color-primary;
+
+            .fancybox__title,
+            .fancybox__desc,
+            .fancybox__icon {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.fancybox-layout3 {
+    .fancybox-item {
+        width: 270px;
+        padding: 37px 35px 30px;
+        background-color: $color-white;
+
+        .fancybox__icon {
+            flex: 0 0 70px;
+        }
+
+        .fancybox__title {
+            font-size: 18px;
+        }
+    }
+}
+
+.fancybox-light {
+
+    .fancybox-item .fancybox__icon,
+    .fancybox-item .fancybox__title,
+    .fancybox-item:hover .fancybox__title {
+        color: $color-white;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .fancybox-item {
+        .fancybox__icon {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .fancybox__title {
+            font-size: 15px !important;
+            margin-bottom: 5px;
+        }
+    }
+
+    .fancybox-layout1,
+    .fancybox-layout2,
+    .fancybox-layout3 {
+        .fancybox-item {
+            padding: 20px;
+        }
+    }
+}

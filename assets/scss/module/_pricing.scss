@@ -1,0 +1,221 @@
+/*--------------------------
+        pricing
+--------------------------*/
+.pricing-package {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 30px);
+    padding: 45px 50px 50px;
+    background-color: $color-white;
+    box-shadow: 0px 5px 83px rgba(14, 32, 77, 0.15);
+    @include prefix(transition, all .3s ease, webkit moz ms o);
+    margin-bottom: 30px;
+
+    .package__title {
+        color: $color-primary;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .package__price {
+        font-family: $font-heading;
+        font-size: 50px;
+        font-weight: 600;
+        color: #435ba1;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .package__period {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .package__desc {
+        font-size: 14px;
+        margin-bottom: 44px;
+    }
+
+    .package__list {
+        margin-bottom: 50px;
+
+        li {
+            margin-bottom: 13px;
+
+            &:before {
+                width: 22px;
+                height: 22px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .package__footer {
+        text-align: center;
+        border-radius: 10px;
+        padding: 32px 20px 40px;
+        background-color: #def8f6;
+    }
+}
+
+.packages-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-top: -130px;
+    border-radius: 15px;
+}
+
+[class*="pricing-widget-layout"] {
+    padding: 40px;
+    border-radius: 12px;
+
+    .pricing__title {
+        font-size: 19px;
+    }
+
+    .pricing__list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        font-size: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #dcdee2;
+
+        &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .price {
+            line-height: 1;
+            padding: 6px 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.pricing-widget-layout1 {
+    background-color: #def8f6;
+
+    .pricing__list li .price {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+}
+
+.pricing-widget-layout2 {
+    border: 2px solid #e6e8eb;
+
+    .pricing__list li .price {
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+}
+
+.pricing-widget-layout3 {
+    background-color: #f6f6f6;
+
+    .pricing__list li .price {
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+}
+
+.widget-plan {
+    border-radius: 13px;
+    border: 2px solid #e6e8eb;
+
+    .widget__body {
+        padding: 50px;
+    }
+
+    .widget__footer {
+        padding: 50px;
+        border-top: 2px solid #e6e8eb;
+    }
+
+    .plan__items {
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #def8f6;
+
+        li {
+            color: $color-secondary;
+        }
+    }
+
+    .plan__price {
+        line-height: 1;
+        font-size: 50px;
+        color: #435BA1;
+
+        .period {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .packages-wrapper>[class*="col-"] {
+        &:first-of-type .pricing-package {
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        &:last-of-type .pricing-package {
+            border-radius: 0px 15px 15px 0px;
+        }
+    }
+}
+
+/* Mobile Phones & tablets and Small Screens */
+@media (max-width:992px) {
+    .pricing-package {
+        height: auto;
+        padding: 20px;
+        border-radius: 10px;
+
+        .package__title {
+            margin-bottom: 10px;
+        }
+
+        .package__price {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .package__desc {
+            margin-bottom: 20px;
+        }
+
+        .package__list {
+            margin-bottom: 30px;
+        }
+
+        .package__footer {
+            border-radius: 10px;
+            padding: 17px 10px 20px;
+        }
+    }
+
+    [class*="pricing-widget-layout"] {
+        padding: 20px;
+        border-radius: 8px;
+
+        .pricing__title {
+            font-size: 16px;
+        }
+
+        .pricing__list li {
+            font-size: 14px;
+
+            .price {
+                padding: 3px 6px;
+            }
+        }
+    }
+}

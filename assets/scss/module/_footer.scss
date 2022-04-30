@@ -1,0 +1,224 @@
+/*-------------------------
+    Footer
+--------------------------*/
+.footer {
+    .footer-primary {
+        padding-top: 85px;
+        padding-bottom: 60px;
+        background-color: #1d2a4d;
+    }
+
+    .footer-secondary {
+        position: relative;
+        padding: 46px 0;
+        background-color: $color-white;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            right: 50px;
+            height: 5px;
+            background-color: $color-primary;
+        }
+    }
+
+    [class*="footer-widget"] {
+        margin-bottom: 30px;
+    }
+
+    .footer-widget__title {
+        color: $color-white;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    .contact-list li {
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .footer-widget-contact {
+        position: relative;
+        overflow: hidden;
+        padding: 40px;
+        border-radius: 15px;
+        background-color: $color-white;
+
+        &:before {
+            content: "\e916";
+            font-family: icomoon;
+            position: absolute;
+            right: -30px;
+            bottom: -15px;
+            font-size: 170px;
+            line-height: 1;
+            color: rgba(40, 59, 106, 0.05);
+            transform: rotate(-20deg);
+            z-index: 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            left: 0;
+            width: 3px;
+            background-color: $color-primary;
+        }
+    }
+
+    .footer-widget-nav li a {
+        display: block;
+        position: relative;
+        color: $color-body;
+        font-size: 14px;
+        margin-bottom: 11px;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    .footer__copyright-links li {
+        a {
+            color: $color-body;
+            display: block;
+            margin-right: 25px;
+            padding: 3px 0;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        &:last-child a {
+            margin-right: 0;
+        }
+    }
+
+    .phone__number {
+        margin: 20px 0;
+    }
+}
+
+.phone__number {
+    display: inline-flex;
+    align-items: center;
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    color: #3851a2 !important;
+
+    &:hover {
+        color: $color-primary !important;
+    }
+
+    i {
+        margin-right: 7px;
+    }
+}
+
+/* Scroll Top Button */
+#scrollTopBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    z-index: 1000;
+    font-size: 18px;
+    border-radius: 50%;
+    color: $color-white;
+    background-color: $color-primary;
+    overflow: hidden;
+    @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+
+    &:hover {
+        background-color: $color-dark;
+    }
+
+    &.actived {
+        right: 30px;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+
+        .footer-widget-nav,
+        .footer-widget-about {
+            margin-top: 40px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@media (min-width: 320px) and (max-width: 1200px) {
+    .footer {
+        .footer-primary {
+            padding-top: 35px;
+            padding-bottom: 30px;
+        }
+
+        .footer-secondary {
+            padding: 20px 0;
+
+            &:after {
+                left: 20px;
+                right: 20px;
+                height: 3px;
+            }
+        }
+
+        .footer-widget-contact {
+            padding: 20px;
+
+            &:after {
+                top: 20px;
+                bottom: 20px;
+            }
+        }
+
+        .footer-widget {
+            margin-bottom: 20px;
+        }
+
+        .footer-widget__title {
+            margin-bottom: 15px;
+        }
+
+        .footer-widget-nav li a {
+            font-size: 13px;
+        }
+
+        .phone__number {
+            margin: 10px 0;
+        }
+    }
+}
+
+/* Mobile Phones */
+@include xs-sm-screens {
+    .footer .footer__copyright-links {
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+    }
+
+    #scrollTopBtn {
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+
+        &.actived {
+            right: 20px;
+        }
+    }
+}
