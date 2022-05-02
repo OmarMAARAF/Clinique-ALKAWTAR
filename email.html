@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <!--[if gte mso 9]>
+	<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--<![endif]-->
+    <!--[if gte mso 9]>
+	<style type="text/css" media="all">
+		sup { font-size: 100% !important; }
+	</style>
+	<![endif]-->
+
+
+    <style type="text/css" media="screen">
+        /* Linked Styles */
+        
+        body {
+            padding: 0 !important;
+            margin: 0 !important;
+            display: block !important;
+            min-width: 100% !important;
+            width: 100% !important;
+            background: #001736;
+            -webkit-text-size-adjust: none
+        }
+        
+        a {
+            color: #66c7ff;
+            text-decoration: none
+        }
+        
+        p {
+            padding: 0 !important;
+            margin: 0 !important
+        }
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+            /* Allow smoother rendering of resized image in Internet Explorer */
+        }
+        
+        .mcnPreviewText {
+            display: none !important;
+        }
+        
+        .cke_editable,
+        .cke_editable a,
+        .cke_editable span,
+        .cke_editable a span {
+            color: #000001 !important;
+        }
+        /* Mobile styles */
+        
+        @media only screen and (max-device-width: 480px),
+        only screen and (max-width: 480px) {
+            .mobile-shell {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+            .text-header,
+            .m-center {
+                text-align: center !important;
+            }
+            .center {
+                margin: 0 auto !important;
+            }
+            .container {
+                padding: 20px 10px !important
+            }
+            .td {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+            .m-br-15 {
+                height: 15px !important;
+            }
+            .p30-15 {
+                padding: 30px 15px !important;
+            }
+            .m-td,
+            .m-hide {
+                display: none !important;
+                width: 0 !important;
+                height: 0 !important;
+                font-size: 0 !important;
+                line-height: 0 !important;
+                min-height: 0 !important;
+            }
+            .m-block {
+                display: block !important;
+            }
+            .fluid-img img {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+            .column,
+            .column-top,
+            .column-empty,
+            .column-empty2,
+            .column-dir-top {
+                float: left !important;
+                width: 100% !important;
+                display: block !important;
+            }
+            .column-empty {
+                padding-bottom: 10px !important;
+            }
+            .column-empty2 {
+                padding-bottom: 30px !important;
+            }
+            .content-spacing {
+                width: 15px !important;
+            }
+        }
+        
+        .calendar-outer {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            position: absolute;
+            top: calc(75% - 45px);
+            left: calc(60% - 45px);
+            transform: translateX(calc(-50% + 46px)) translateY(calc(-50% + 53px)) rotate3d(2, 0, -1, 20deg);
+            perspective: 500px;
+            transform-style: preserve-3d;
+            background: #5e6c75;
+            border-bottom: 3px solid #3c454b;
+        }
+        
+        .calendar-inner {
+            display: flex;
+            flex-flow: column nowrap;
+            position: absolute;
+            top: 75%;
+            left: 60%;
+            transform: translateX(-50%) translateY(-50%) translateZ(80px) rotate3d(2, 0, -1, 20deg);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.8);
+            border-bottom: 3px solid #ccc;
+            background-color: #fff;
+        }
+        
+        .calendar-inner__month {
+            font-size: 20px;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: #e75853;
+        }
+        
+        .calendar-inner__day {
+            font-size: 90px;
+            padding: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .calendar-inner__day span {
+            font-weight: 300;
+        }
+        
+        .calendar-inner span {
+            line-height: 1;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="body" style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#001736; -webkit-text-size-adjust:none;">
+    <!--*|IF:MC_PREVIEW_TEXT|*-->
+    <!--[if !gte mso 9]><!-->
+    <span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></span>
+    <!--<![endif]-->
+    <!--*|END:IF|*-->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#001736">
+        <tr>
+            <td align="center" valign="top">
+                <table width="650" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+                    <tr>
+                        <td class="td container" style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; margin:0; font-weight:normal; padding:55px 0px;">
+                            <!-- Header -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="p30-15" style="padding: 0px 30px 30px 30px;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <th class="column-top" width="145" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="img m-center" style="font-size:0pt; line-height:0pt; text-align:left;">
+                                                                <!--Logo here-->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                                <th class="column-empty" width="1" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;"></th>
+                                                <th class="column" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="text-header" style="color:#475c77; font-family:'Muli', Arial,sans-serif; font-size:12px; line-height:16px; text-align:right;">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- END Header -->
+
+                            <!-- Intro -->
+                            <div mc:repeatable="Select" mc:variant="Intro">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td style="padding-bottom: 10px;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td class="tbrr p30-15" style="padding: 60px 30px; border-radius:26px 26px 0px 0px;" bgcolor="#12325c">
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="h1 pb25" style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:40px; line-height:46px; text-align:center; padding-bottom:25px;">
+                                                                    <div mc:edit="text_2">Bonjour, %%username%%</div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center pb25" style="color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;">
+                                                                    <div mc:edit="text_3">Nous vous remercions sincèrement de nous avoir assuré de prendre soin de votre santé</div>
+                                                                    <div mc:edit="text_3">Nous sommes heureux que vous soyez avec nous, veuillez cliquer sur le lien ci dessous pour confirmer votre identité
+
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Button -->
+                                                            <tr mc:hideable>
+                                                                <td align="center">
+                                                                    <table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
+                                                                        <tr>
+                                                                            <td class="pink-button text-button" style="background:#ff6666; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;">
+                                                                                <div mc:edit="text_4"><a href="http://localhost/RDV/verify-email.php?token=%%token%%" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">Confirmer</span></a></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- END Button -->
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <!-- END Intro -->
+
+
+
+                                <!-- Two Columns -->
+                                <div mc:repeatable="Select" mc:variant="Two Columns">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td style="padding-bottom: 10px;">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ff6666">
+                                                    <tr>
+                                                        <td>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <th class="column-top" width="280" bgcolor="#0e264b" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
+                                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td class="p30-15" style="padding: 50px 30px;">
+                                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                        <tr>
+                                                                                            <td class="h4 pb20" style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:20px; line-height:28px; text-align:left; padding-bottom:20px;">
+                                                                                                <div mc:edit="text_26">Informations fournies : </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                    <tr mc:repeatable>
+                                                                                                        <td class="pb10" style="padding-bottom:10px;">
+                                                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                <tr>
+                                                                                                                    <td valign="top" width="25" style="font-size:0pt; line-height:0pt; text-align:left;"><i class="fa-solid fa-user-nurse"></i></td>
+                                                                                                                    <td valign="top" class="text" style="color:#ffffff; font-family:Arial,sans-serif; font-size:14px; line-height:26px; text-align:left;">
+                                                                                                                        <div mc:edit="text_27"><span class="link" style="color:#66c7ff; text-decoration:none;">Nom de patient : <span style="font-weight: bold; color: #ffffff;">%%username%%</span></span>
+                                                                                                                            </>
+                                                                                                                        </div>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr mc:repeatable>
+                                                                                                        <td class="pb10" style="padding-bottom:10px;">
+                                                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                <tr>
+                                                                                                                    <td valign="top" class="img" width="25" style="font-size:0pt; line-height:0pt; text-align:left;"><img src="images/small_arrow.jpg" width="10" height="17" mc:edit="image_9" style="max-width:10px;" border="0" alt="" /></td>
+                                                                                                                    <td valign="top" class="text" style="color:#ffffff; font-family:Arial,sans-serif; font-size:14px; line-height:26px; text-align:left;">
+                                                                                                                        <div mc:edit="text_28"><span class="link" style="color:#66c7ff; text-decoration:none;">Numéro du Téléphone :<span style="font-weight: bold; color: #ffffff;">%%phone%%</span>                                                                                                                            </span>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr mc:repeatable>
+                                                                                                        <td class="pb10" style="padding-bottom:10px;">
+                                                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                <tr>
+                                                                                                                    <td valign="top" class="img" width="25" style="font-size:0pt; line-height:0pt; text-align:left;"><img src="images/small_arrow.jpg" width="10" height="17" mc:edit="image_10" style="max-width:10px;" border="0" alt="" /></td>
+                                                                                                                    <td valign="top" class="text" style="color:#ffffff; font-family:Arial,sans-serif; font-size:14px; line-height:26px; text-align:left;">
+                                                                                                                        <div mc:edit="text_29"><span class="link" style="color:#66c7ff; text-decoration:none;">préoccupation médicale : <span style="font-weight: bold; color: #ffffff;">%%occupation%%</span></span>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr mc:repeatable>
+                                                                                                        <td class="pb10" style="padding-bottom:10px;">
+                                                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                <tr>
+                                                                                                                    <td valign="top" class="img" width="25" style="font-size:0pt; line-height:0pt; text-align:left;"><img src="images/small_arrow.jpg" width="10" height="17" mc:edit="image_11" style="max-width:10px;" border="0" alt="" /></td>
+                                                                                                                    <td valign="top" class="text" style="color:#ffffff; font-family:Arial,sans-serif; font-size:14px; line-height:26px; text-align:left;">
+                                                                                                                        <div mc:edit="text_30"><span class="link" style="color:#66c7ff; text-decoration:none;">Type du rendez-vous : <span style="font-weight: bold; color: #ffffff;">%%type%%</span></span>
+
+                                                                                                                        </div>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </th>
+                                                                    <th style="background-color: #0E264B;">
+                                                                        <div class="calendar-outer"></div>
+                                                                        <div class="calendar-inner">
+                                                                            <div class="calendar-inner__month">
+                                                                                <span>%%month%%</span>
+                                                                            </div>
+                                                                            <div class="calendar-inner__day">
+                                                                                <span>%%day%%</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- END Two Columns -->
+
+                                <!-- Footer -->
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="p30-15 bbrr" style="padding: 50px 30px; border-radius:0px 0px 26px 26px;" bgcolor="#0e264b">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td align="center" style="padding-bottom: 30px;">
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-footer1 pb10" style="color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:20px; text-align:center; padding-bottom:10px;">
+                                                        <div mc:edit="text_36">Clinique Alkawtar</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-footer2" style="color:#8297b3; font-family:'Muli', Arial,sans-serif; font-size:12px; line-height:26px; text-align:center;">
+                                                        <div mc:edit="text_37">Avenue AlRahma, rue ALkarama <br />BD essair, Route Al Naciri 4, Fes </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-footer3 p30-15" style="padding: 40px 30px 0px 30px; color:#475c77; font-family:'Muli', Arial,sans-serif; font-size:12px; line-height:18px; text-align:center;">
+                                            <div mc:edit="text_38"><a class="link2-u" target="_blank" href="*|UNSUB|*" style="color:#475c77; text-decoration:underline;">Si vous pensez que cet e-mail n'est pas pour vous, veuillez vous désinscrire ici</a> .</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="img" style="font-size:0pt; line-height:0pt; text-align:left;">
+                                            <div mc:edit="text_39">
+                                                <!--[if !mso]><!-->
+                                                *|LIST:DESCRIPTION|* *|LIST:ADDRESS|* *|REWARDS_TEXT|*
+                                                <!--<![endif]-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- END Footer -->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
