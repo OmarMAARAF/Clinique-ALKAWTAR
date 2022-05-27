@@ -1,10 +1,11 @@
 ﻿<?php
+
+////OMAAR CHANGE THIS TO A FILE 
 $host = "localhost";
 $user = "root";
 $password = "";
 $db = "user";
 $data = mysqli_connect($host, $user, $password, $db);
-
 
 ?>
 
@@ -32,7 +33,7 @@ $data = mysqli_connect($host, $user, $password, $db);
 
 
     <title>
-        Doclinic - Dashboard
+        Alkawtar - Panneau d'administration
     </title>
 
     <!-- Vendors Style-->
