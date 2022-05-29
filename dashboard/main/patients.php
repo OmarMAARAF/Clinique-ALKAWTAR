@@ -12,7 +12,7 @@
     <link rel="icon" href="https://multipurposethemes.com/admin/doclinic-admin-template/images/favicon.ico">
     <link href="../assets/favicon/favicon.png" rel="icon">
 
-    <title>Doclinic - Dashboard</title>
+    <title>Liste Des Patients</title>
 
     <!-- Vendors Style-->
     <link rel="stylesheet" href="css/vendors_css.css">
@@ -148,7 +148,7 @@
                                 <a href="reports.html">
                                     <i class="icon-Settings-1"><span class="path1"></span><span
                                             class="path2"></span></i>
-                                    <span>Reports</span>
+                                    <span>Rapports</span>
                                 </a>
                             </li>
 
