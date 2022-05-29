@@ -1,20 +1,29 @@
 <?php
 include_once("connectDB.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'PHPMailer\Exception.php';
+require 'PHPMailer\PHPMailer.php';
+require 'PHPMailer\SMTP.php';
+
 
 function send_email($message, $email){
-	$to = $email;
-	$subject = "Bienvenue sur Alkawtar";
-	$header = "From:abc@somedomain.com \r\n";
-	$header .= "Cc:afgh@somedomain.com \r\n";
-	$header .= "MIME-Version: 1.0\r\n";
-	$header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-	
-	$retval = mail ($to,$subject,$message,$header);
-	
+	$mail = new PHPMailer(TRUE);
+    $mail->isSMTP();                        // Set mailer to use SMTP
+    $mail->Host       = "smtp.gmail.com";    // Specify main SMTP server
+    $mail->SMTPAuth   = true;               // Enable SMTP authentication
+    $mail->Username   = 'clinic.alkawtar@gmail.com';     // SMTP username
+    $mail->Password = 'alkawtar1234';   // SMTP password
+    $mail->Port       = 587;                // TCP port to connect to
+    $mail->setFrom('clinic.alkawtar@gmail.com', 'Clinique Alkawtar');           // Set sender of the mail
+    $mail->addAddress($email);           // Add a recipient
+    $mail->Subject = 'Confirmer le Rendez-vous | Clinique Alkawtar';
+    $mail->MsgHTML($message);
+    $mail->IsHTML(true);
+    $mail->send();
 	if( $retval == true ) {
 		header("Location: login.php");
 	}else {
-		header('Location: smtp-error.php');
 	}
 }
 
@@ -61,7 +70,7 @@ if (isset($_POST['login-btn'])) {
     }
 }
 
-//Adding the new  user to DATABASE
+//Adding the new user to DATABASE
 if (isset($_POST['register'])) {
 	if (empty($_POST['firstname'])) {
 		$errors['firstname'] = 'Prenom nécessaire';
@@ -121,7 +130,7 @@ if (isset($_POST['register'])) {
 		echo "no errors";
 		$userquery = "INSERT INTO users(username,email,verified,token,password,sexe,age,phone,oldPatient) 
 			values('$username','$email','0','$token','$password','$sexe','$age','$phone','$oldPatient')";
-		$rdvquery = "INSERT INTO rdv(date,Heure,problem,type,token) 
+		$rdvquery = "INSERT INTO rdv(date,heure,problem,type,token) 
 			values('$new_date','$time','$problem_medical','$typeRDV','$token')";
 		//Replacing mail values 
 		$upper_string = ucwords($username);
@@ -145,13 +154,18 @@ if (isset($_POST['register'])) {
 			$_SESSION['verified'] = false;
 			$_SESSION['type'] = 'alert-success';
 		} else {
+			header('Location: smtp-error.php');
 			$_SESSION['message'] = 'Erreur de création du compte';
+			exit(0);
 			
 		}
 	}
 		header('location: login.php');
 		exit(0);
 }
+
+
+
 
 if(isset($_POST['resend'])){
     $message = file_get_contents('resend_email.html');
