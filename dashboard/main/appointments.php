@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link href="../assets/favicon/favicon.png" rel="icon">
 
-    <title>Doclinic - Dashboard </title>
+    <title>Calendrier Des Appointements</title>
 
     <!-- Vendors Style-->
     <link rel="stylesheet" href="css/vendors_css.css">
@@ -19,6 +19,8 @@
     <!-- Style-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skin_color.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </head>
 
@@ -174,9 +176,11 @@
                             <div class="d-inline-block align-items-center">
                                 <nav>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a>
+                                        <li>
+                                            <ion-icon name="calendar-clear-outline"></ion-icon>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">Appointments</li>
+                                        <li class="breadcrumb-item active" aria-current="page"
+                                            style="margin-right: 5px;">Appointments</li>
                                     </ol>
                                 </nav>
                             </div>
