@@ -11,11 +11,12 @@
 https://www.youtube.com/watch?v=SdZaJkHRsHA
 
   </div>
-  <h3 >video trailer</h3>
+  <center>
+  <h3 >video trailer</h3></center>
 <div align="center">
 
 <a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
-" target="_blank"><img src="https://i.ytimg.com/vi/SdZaJkHRsHA/maxresdefault.jpg" 
+" target="_blank"><img src="https://i.ibb.co/bQzsjH2/Screenshot-11.png" 
 alt="IMAGE ALT TEXT HERE" width="500" height="300" border="10" /></a>
 
 </div>
