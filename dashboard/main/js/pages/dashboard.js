@@ -139,11 +139,7 @@ $(function () {
 					// push interpolation
 					var difference = actualData[i + 1] - actualData[i];
 					var interpolationStep = 1 / interpolationSteps;
-					for (var j = 1; j < interpolationSteps; j++) {
-						labels.push('')
-						data.push(actualData[i] + difference * Chart.helpers.easingEffects["linear"](j * interpolationStep));
-						blankData.push(null)
-					}
+					
 				}
 				labels.push('')
 				data.push(actualData[i])

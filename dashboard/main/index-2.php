@@ -213,24 +213,9 @@ include('pdata.php')
                                         </div>
                                     </div>
                                     <div class="col-xl-3 col-lg-6 col-12">
+
                                         <div class="box">
-                                            <div class="box-body">
-                                                <div class="mb-15 d-flex justify-content-between align-items-center">
-                                                    <h4 class="my-0">Blood Pre..</h4>
-                                                    <i class="text-primary fs-18 mdi mdi-heart-pulse"></i>
-                                                </div>
-                                                <div class="mb-10 d-flex justify-content-between align-items-center">
-                                                    <h4 class="fw-400 my-0">75</h4>
-                                                    <p class="my-0">Upper</p>
-                                                </div>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <h4 class="fw-400 my-0">124</h4>
-                                                    <p class="my-0">Lower</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <div class="box-body">
+                                            <div class="box-body" style="height:140px">
                                                 <div
                                                     class="mb-5 pb-1 d-flex justify-content-between align-items-center">
                                                     <h4 class="my-0">Bill Due</h4>
@@ -244,7 +229,7 @@ include('pdata.php')
                                     </div>
                                     <div class="col-xl-3 col-lg-6 col-12">
                                         <div class="box overflow-hidden">
-                                            <div class="box-body">
+                                            <div class="box-body" style=" height:140px">
                                                 <div>
                                                     <h4 class="mt-0 mb-5">Heure</h4>
 
@@ -314,7 +299,7 @@ include('pdata.php')
                                                         class="rounded-circle bg-primary" alt="" />
                                                 </div>
                                                 <h4 class="mt-20 mb-15">Dr. Omar MAARAF</h4>
-                                                <p class="mb-0">Heart Specialist</p>
+                                                <p class="mb-0">Cardiologists</p>
                                             </div>
                                             <div class="box-body">
                                                 <div class="row">
