@@ -12,7 +12,8 @@
   </div>
  
 <div align="center">
-VIDEO TRAILER
+  <h2>VIDEO TRAILER</h2>
+  <br/>
   https://www.youtube.com/watch?v=SdZaJkHRsHA
 
 <a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
