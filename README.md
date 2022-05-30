@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./screenshots/logo-dark-text.png">
   </a>
 
   <h3 align="center">Projet Clinique ALkawtar</h3>
