@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/patients.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:30 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -546,6 +545,5 @@
 
 </body>
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/patients.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:31 GMT -->
 
 </html>

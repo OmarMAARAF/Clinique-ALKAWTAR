@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/appointments.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:29 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +9,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="../assets/favicon/favicon.png" rel="icon">
-
     <title>Calendrier Des Appointements</title>
 
     <!-- Vendors Style-->
@@ -761,6 +759,5 @@
 
 </body>
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/appointments.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:30 GMT -->
 
 </html>
