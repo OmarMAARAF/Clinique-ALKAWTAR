@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
 ////OMAAR CHANGE THIS TO A FILE 
+
 $host = "localhost";
 $user = "root";
 $password = "";

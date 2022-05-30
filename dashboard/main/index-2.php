@@ -12,7 +12,7 @@ include('pdata.php')
     <meta name="author" content="">
     <link rel="icon" href="https://multipurposethemes.com/admin/doclinic-admin-template/images/favicon.ico">
     <link href="../assets/favicon/favicon.png" rel="icon">
-    <title>Doclinic - Dashboard</title>
+    <title>Alkawtar | Table d'administration </title>
 
     <link rel="stylesheet" href="notes.css">
     <!-- Vendors Style-->
@@ -24,7 +24,6 @@ include('pdata.php')
     <link rel="stylesheet" href="css/skin_color.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./js/calendar.js"></script>
 </head>
 
 <body class="hold-transition light-skin sidebar-mini theme-primary fixed">
@@ -99,8 +98,8 @@ include('pdata.php')
                                 <li class="user-body">
                                     <a class="dropdown-item" href="extra_profile.html"><i
                                             class="ti-user text-muted me-2"></i> Profile</a>
-                                    <a class="dropdown-item" href="auth_login.html"><i
-                                            class="ti-lock text-muted me-2"></i> Logout</a>
+                                    <a class="dropdown-item" href="./Logout.php"><i class="ti-lock text-muted me-2"></i>
+                                        Logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -347,7 +346,7 @@ include('pdata.php')
                                 </a>
                                 <div class="box b-0 bg-transparent no-shadow">
                                     <div class="box-body pb-0 px-0">
-                                        <h4 class="mb-0">Vos prochains Appointements </h4>
+                                        <h4 class="mb-0">Calendrier </h4>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -388,108 +387,7 @@ include('pdata.php')
                             </div>
                         </div>
                     </section>
-                    <script>
-                    let calendar = document.querySelector('.calendar')
 
-                    const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
-                        'September', 'October', 'November', 'December'
-                    ]
-
-                    isLeapYear = (year) => {
-                        return (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 &&
-                            year % 400 === 0)
-                    }
-
-                    getFebDays = (year) => {
-                        return isLeapYear(year) ? 29 : 28
-                    }
-
-                    generateCalendar = (month, year) => {
-
-                        let calendar_days = calendar.querySelector('.calendar-days')
-                        let calendar_header_year = calendar.querySelector('#year')
-
-                        let days_of_month = [31, getFebDays(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
-                        calendar_days.innerHTML = ''
-
-                        let currDate = new Date()
-                        if (!month) month = currDate.getMonth()
-                        if (!year) year = currDate.getFullYear()
-
-                        let curr_month = `${month_names[month]}`
-                        month_picker.innerHTML = curr_month
-                        calendar_header_year.innerHTML = year
-
-                        // get first day of month
-
-                        let first_day = new Date(year, month, 1)
-
-                        for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
-                            let day = document.createElement('div')
-                            if (i >= first_day.getDay()) {
-                                day.classList.add('calendar-day-hover')
-                                day.innerHTML = i - first_day.getDay() + 1
-                                day.innerHTML += `<span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>`
-                                if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate
-                                    .getFullYear() && month === currDate.getMonth()) {
-                                    day.classList.add('curr-date')
-                                }
-                            }
-                            calendar_days.appendChild(day)
-                        }
-                    }
-
-                    let month_list = calendar.querySelector('.month-list')
-
-                    month_names.forEach((e, index) => {
-                        let month = document.createElement('div')
-                        month.innerHTML = `<div data-month="${index}">${e}</div>`
-                        month.querySelector('div').onclick = () => {
-                            month_list.classList.remove('show')
-                            curr_month.value = index
-                            generateCalendar(index, curr_year.value)
-                        }
-                        month_list.appendChild(month)
-                    })
-
-                    let month_picker = calendar.querySelector('#month-picker')
-
-                    month_picker.onclick = () => {
-                        month_list.classList.add('show')
-                    }
-
-                    let currDate = new Date()
-
-                    let curr_month = {
-                        value: currDate.getMonth()
-                    }
-                    let curr_year = {
-                        value: currDate.getFullYear()
-                    }
-
-                    generateCalendar(curr_month.value, curr_year.value)
-
-                    document.querySelector('#prev-year').onclick = () => {
-                        --curr_year.value
-                        generateCalendar(curr_month.value, curr_year.value)
-                    }
-
-                    document.querySelector('#next-year').onclick = () => {
-                        ++curr_year.value
-                        generateCalendar(curr_month.value, curr_year.value)
-                    }
-
-                    let dark_mode_toggle = document.querySelector('.dark-mode-switch')
-
-                    dark_mode_toggle.onclick = () => {
-                        document.querySelector('body').classList.toggle('light')
-                        document.querySelector('body').classList.toggle('dark')
-                    }
-                    </script>
                     <!-- /.content -->
                 </div>
             </div>

@@ -98,8 +98,8 @@ include('pdata.php')
                                 <li class="user-body">
                                     <a class="dropdown-item" href="extra_profile.html"><i
                                             class="ti-user text-muted me-2"></i> Profile</a>
-                                    <a class="dropdown-item" href="auth_login.html"><i
-                                            class="ti-lock text-muted me-2"></i> Logout</a>
+                                    <a class="dropdown-item" href="./Logout.php"><i class="ti-lock text-muted me-2"></i>
+                                        Logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -257,12 +257,12 @@ include('pdata.php')
                                             <img src="../images/avatar/1--.png" class="bg-success-light rounded10"
                                                 alt="" style="width: 120px;" />
                                             <div class="text-center my-10">
-                                                <p class="mb-0">Disease</p>
-                                                <h4>Cold & Flu</h4>
+
                                             </div>
                                         </div>
                                         <div class="mt-40">
-                                            <h4 class="fw-600 mb-5"><?php echo $patient_info["username"] ?></h4>
+                                            <h4 class="fw-600 mb-5" style="margin-top: 20px;">
+                                                <?php echo $patient_info["username"] ?></h4>
                                             <p><i class="fa fa-clock-o"></i>compte créer le
                                                 <?php echo $patient_info["creat"] ?> </p>
                                         </div>
@@ -270,62 +270,20 @@ include('pdata.php')
                                 </div>
                                 <div class="box-body pt-0">
                                     <h4>Story About Disease</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                                        porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                        velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                        magnam aliquam quaerat voluptatem.</p>
+                                    <p>Bienvenue chez Clinique-Alkawtar, un nouveau réseau des hôpitaux et cliniques
+                                        localisé dans des différentes régions au Maroc (Fes, Oujda,…) .
+                                        Notre objectif est d’accueillir, de soigner et de guérir les familles du
+                                        différenr régions du maroc, en leur fournissant une santé de qualité et des
+                                        soins chaleureux et
+                                        pratiques dans toutes les régions de Maroc</p>
+                                    <p>Clinique-ALkawtar met nos professionnels, collaborateurs et infrastructures de
+                                        pointe à la disposition de tous les habitants du Casablanca, pour améliorer la
+                                        vie de nos patients.</p>
                                 </div>
                             </div>
                             <div class="row">
 
-                                <div class="col-xl-6 col-12">
-                                    <div class="box">
-                                        <div class="box-header no-border">
-                                            <ion-icon name="calendar-outline"
-                                                style="margin-Right: 13px; width :20px ;height:20px; ">
-                                            </ion-icon>
-                                            <h4 class="box-title"> Calendrier</h4>
-                                        </div>
-                                        <div class="calendar" sty>
-                                            <div class="calendar-header">
-                                                <span class="month-picker" id="month-picker">February</span>
-                                                <div class="year-picker">
-                                                    <span class="year-change" id="prev-year">
-                                                        <pre><</pre>
-                                                    </span>
-                                                    <span id="year">2021</span>
-                                                    <span class="year-change" id="next-year">
-                                                        <pre>></pre>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="calendar-body">
-                                                <div class="calendar-week-day">
-                                                    <div>Dim</div>
-                                                    <div>Lun</div>
-                                                    <div>Mar</div>
-                                                    <div>Mer</div>
-                                                    <div>Jeu</div>
-                                                    <div>Ven</div>
-                                                    <div>Sam</div>
-                                                </div>
-                                                <div class="calendar-days"></div>
-                                            </div>
 
-                                            <div class="month-list"></div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

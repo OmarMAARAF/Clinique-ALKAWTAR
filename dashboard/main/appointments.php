@@ -81,7 +81,7 @@
                                 data-bs-toggle="dropdown" title="User">
                                 <div class="d-flex pt-1">
                                     <div class="text-end me-10">
-                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">Johen Doe</p>
+                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">Omar MAARAF</p>
                                         <small class="fs-10 mb-0 text-uppercase text-mute">Admin</small>
                                     </div>
                                     <img src="../images/avatar/doctor.png"
@@ -90,10 +90,10 @@
                             </a>
                             <ul class="dropdown-menu animated flipInX">
                                 <li class="user-body">
-                                    <a class="dropdown-item" href="extra_profile.html"><i
-                                            class="ti-user text-muted me-2"></i> Profile</a>
-                                    <a class="dropdown-item" href="auth_login.html"><i
-                                            class="ti-lock text-muted me-2"></i> Logout</a>
+                                    <a class="dropdown-item" href="./index2.php"><i class="ti-user text-muted me-2"></i>
+                                        Profile</a>
+                                    <a class="dropdown-item" href="./Logout.php"><i class="ti-lock text-muted me-2"></i>
+                                        Logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -145,13 +145,7 @@
                                 </a>
 
                             </li>
-                            <li>
-                                <a href="reports.html">
-                                    <i class="icon-Settings-1"><span class="path1"></span><span
-                                            class="path2"></span></i>
-                                    <span>Reports</span>
-                                </a>
-                            </li>
+
 
                         </ul>
 

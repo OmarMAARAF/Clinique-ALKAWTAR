@@ -1,10 +1,11 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
 header('content-Type: application/json');
-$host = "sql11.freesqldatabase.com";
-$user = "sql11496381";
-$password = "IURWgmMvUY";
-$db = "sql11496381";
+
+$host = "localhost";
+$user = "root";
+$password = "";
+$db = "user";
 $data = mysqli_connect($host, $user, $password, $db);
 $sql = "select * from costumer where sex ='homme' and date =DATE(now()) ";
 

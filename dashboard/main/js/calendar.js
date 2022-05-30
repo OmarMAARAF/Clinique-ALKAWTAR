@@ -48,8 +48,9 @@ generateCalendar = (month, year) => {
     }
 }
 
-let month_list = calendar.querySelector('.month-list')
 
+let month_list = calendar.querySelector('.month-list')
+console.log("here");
 month_names.forEach((e, index) => {
     let month = document.createElement('div')
     month.innerHTML = `<div data-month="${index}">${e}</div>`
