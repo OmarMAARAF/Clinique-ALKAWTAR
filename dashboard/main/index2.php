@@ -1,18 +1,10 @@
 ﻿<?php
-
-////OMAAR CHANGE THIS TO A FILE 
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "user";
-$data = mysqli_connect($host, $user, $password, $db);
-
+include_once('../../connectDB.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:28 GMT -->
 
 
 <head>

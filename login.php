@@ -43,15 +43,7 @@
                 <div class="fxt-form">
                     <p>Se connecter à votre compte</p>
                     
-                    <?php if (count($errors) > 0): ?>
-                    <div class="alert alert-danger">
-                        <?php foreach ($errors as $error): ?>
-                        <li>
-                            <?php echo $error; ?>
-                        </li>
-                        <?php endforeach;?>
-                    </div>
-                    <?php endif;?>
+            
                     <form method="POST" action ="connectAll.php">
                         <div class="form-group">
                             <div class="fxt-transformY-50 fxt-transition-delay-1">

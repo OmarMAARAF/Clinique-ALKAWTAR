@@ -13,7 +13,7 @@ function send_email($message, $email){
     $mail->Host       = "smtp.gmail.com";    // Specify main SMTP server
     $mail->SMTPAuth   = true;               // Enable SMTP authentication
     $mail->Username   = 'clinic.alkawtar@gmail.com';     // SMTP username
-    $mail->Password = 'alkawtar1234';   // SMTP password
+    $mail->Password = 'bustedaswhatSheBat';   // SMTP password
     $mail->Port       = 587;                // TCP port to connect to
     $mail->setFrom('clinic.alkawtar@gmail.com', 'Clinique Alkawtar');           // Set sender of the mail
     $mail->addAddress($email);           // Add a recipient
@@ -38,7 +38,7 @@ if (isset($_POST['login-btn'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if (count($errors) === 0) {
+ 
         $query = "SELECT * FROM users WHERE email=? OR password=? LIMIT 1";
         $stmt = $conn->prepare($query);
         $stmt->bind_param('ss', $email, $password);
@@ -68,7 +68,6 @@ if (isset($_POST['login-btn'])) {
             $_SESSION['type'] = "alert-danger";
         }
     }
-}
 
 //Adding the new user to DATABASE
 if (isset($_POST['register'])) {
@@ -96,14 +95,35 @@ if (isset($_POST['register'])) {
 	$reservation_hour = $_POST['HeureRDV'];
 	$problem_medical = $_POST['additional_message_2'];
 	$typeRDV  = $_POST['typeRDV'];
+	$specialite = $_POST['specialite'];
 	$oldPatient = $_POST['already_patient'];
+	if(isset($_POST['adresse'])){
+		$adresse = $_POST['adresse'];
+	}
+	else{
+		$adresse = "";
+	}
 
 	if( isset( $_POST['phone'] ) ) {
 				$phone = $_POST ['phone'];
 	}
 	$age = "";
-	if( isset( $_POST['age'] ) && $_POST['age']) {
+	if(isset($_POST['age'])) {
 		$age = $_POST['age'];
+	
+		if($_POST['age'] >0 && $_POST['age'] <= 3){
+			$_SESSION['genre'] = 'bébé';
+		}
+		else if($_POST['age'] >=4 && $_POST['age'] < 13){
+			$_SESSION['genre'] = 'enfant';
+		}
+		else if($_POST['age'] >=13 && $_POST['age'] < 18){
+			$_SESSION['genre'] = 'adolescent';
+		}
+		else if($_POST['age'] >=18){
+			$_SESSION['genre'] = 'adulte';
+		}
+		$genre = $_SESSION['genre'];
 	}
 	$sexe = $_POST['sexe'];
 	$date = strtotime($_POST['dateRDV']);
@@ -128,10 +148,13 @@ if (isset($_POST['register'])) {
 
 	if (count($errors) === 0) {
 		echo "no errors";
-		$userquery = "INSERT INTO users(username,email,verified,token,password,sexe,age,phone,oldPatient) 
-			values('$username','$email','0','$token','$password','$sexe','$age','$phone','$oldPatient')";
-		$rdvquery = "INSERT INTO rdv(date,heure,problem,type,token) 
-			values('$new_date','$time','$problem_medical','$typeRDV','$token')";
+		$userquery = "INSERT INTO users(username,email,verified,token,password,sexe,age,phone,oldPatient,adresse,created_at) 
+			values('$username','$email','0','$token','$password','$sexe','$age','$phone','$oldPatient','$adresse',NOW())";
+		$rdvquery = "INSERT INTO rdv(date,heure,problem,type,token,specialite) 
+			values('$new_date','$time','$problem_medical','$typeRDV','$token','$specialite')";
+		$costumerquery = "INSERT INTO costumer(nom, prenom, doctor, date, sex, email, heur, etat, genre, phone, `type de service`)
+		VALUES('$nom', '$prenom', 'omar','$new_date', '$time', '$sexe', '$email', '$time', '', '$genre, '$phone', '$typeRDV')";
+
 		//Replacing mail values 
 		$upper_string = ucwords($username);
 		$message = str_replace('%%token%%', $token, $message);
@@ -146,13 +169,17 @@ if (isset($_POST['register'])) {
 		//execute the query
 		$result_user = mysqli_query($conn, $userquery); 
 		$result_rdv = mysqli_query($conn, $rdvquery);
+
 		if ($result_user && $result_rdv) {
+			
 			send_email($message,$email);
 			$_SESSION['token'] = $token;
 			$_SESSION['username'] = $username;
 			$_SESSION['email'] = $email;
 			$_SESSION['verified'] = false;
 			$_SESSION['type'] = 'alert-success';
+			header('location: not_verified.php');
+			exit(0);
 		} else {
 			header('Location: smtp-error.php');
 			$_SESSION['message'] = 'Erreur de création du compte';
@@ -160,8 +187,8 @@ if (isset($_POST['register'])) {
 			
 		}
 	}
-		header('location: login.php');
-		exit(0);
+		//header('location: login.php');
+		//exit(0);
 }
 
 
@@ -174,8 +201,27 @@ if(isset($_POST['resend'])){
     sendMail($message,$_SESSION['email']);
 }
 if(isset($_POST['refresh'])){
-     header('location: showuser.php');
+     header('location: dashboard/main/index-2.php');
      exit(0);
 }
 
+if(isset($_POST['send'])){
+	$name = $_POST["contact-name"];
+	$email = $_POST["contact-email"];
+	$phone =  $_POST["contact-phone"];
+	$subject = $_POST["contact-sujet"];
+	$message = $_POST["contact-message"];
+	//insert into contact table
+	$contactquery = "INSERT INTO contact(name,email,phone,subject,message) 
+		values('$name','$email','$phone','$subject','$message')";
+	$result = mysqli_query($conn, $contactquery);
+	if ($result) {
+		header('location: contact_success.php');
+		exit(0);
+	} else {
+		header('location: smtp-error.php');
+		exit(0);
+	}
+
+}
 ?>

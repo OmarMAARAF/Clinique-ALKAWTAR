@@ -10,7 +10,7 @@ include_once("connectAll.php");
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Verification | Clinique Alkawtar</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/verify.css">
+        <link rel="stylesheet" href="assets/css/verify.css">
     </head>
 
     <body>

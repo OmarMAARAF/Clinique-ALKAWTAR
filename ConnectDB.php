@@ -2,12 +2,11 @@
     session_start();
     $username = "";
     $email = "";
-    $errors = [];
     //connecting to DB
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $db = "sql11478598";
+    $host = "sql11.freesqldatabase.com";
+    $user = "sql11496381";
+    $password = "IURWgmMvUY";
+    $db = "sql11496381";
     $conn = mysqli_connect($host, $user, $password, $db);
     if (mysqli_connect_errno()) {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
