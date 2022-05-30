@@ -17,7 +17,7 @@
     <li>
       <a href="#about-the-project">A propos du projets</a>
       <ul>
-        <li><a href="#built-with">Construit par :</a></li>
+        <li><a href="#built-with">Outils</a></li>
       </ul>
     </li>
     <li>
@@ -26,6 +26,9 @@
         <li><a href="#prerequisites">Admin</a></li>
         <li><a href="#installation">User</a></li>
       </ul>
+    </li>
+    <li>
+      <a href="#about-the-project">Réaliser par</a>
     </li>
     
   </ol>
@@ -65,7 +68,7 @@ Tout membre du site possède un Panneau d'administration, auquel il peut savoir 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Construit par :
+### Outils :
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
@@ -108,3 +111,12 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+### Réaliser par
+
+<ul>
+<li>Omar MAARAF</li>
+<li>Youssef Mourabiti</li>
+<li>Slimani Mohammed</li>
+<li>Youssef Ammari</li>
+</ul>
