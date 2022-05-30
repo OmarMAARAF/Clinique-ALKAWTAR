@@ -8,12 +8,12 @@
   
 </div>
 
-https://www.youtube.com/watch?v=SdZaJkHRsHA
 
   </div>
-  <center>
-  <h3 >video trailer</h3></center>
+ 
 <div align="center">
+VIDEO TRAILER
+  https://www.youtube.com/watch?v=SdZaJkHRsHA
 
 <a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
 " target="_blank"><img src="https://i.ibb.co/bQzsjH2/Screenshot-11.png" 
