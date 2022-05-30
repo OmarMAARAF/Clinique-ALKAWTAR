@@ -9,7 +9,7 @@
 
 </div>
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="https://github.com/OmarMAARAF/Clinique-ALKAWTAR/blob/main/screenshots/main.png" alt="IMAGE ALT TEXT"></a>
+  <iframe width="560" height="315" src="https://youtu.be/SdZaJkHRsHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <!-- TABLE OF CONTENTS -->
 <details>
