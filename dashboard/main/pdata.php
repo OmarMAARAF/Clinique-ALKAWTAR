@@ -11,11 +11,11 @@ $username = $_SESSION["username"];
 
 
 
-$sql = "select * from users where id= $fixid";
+$sql = "select * from users where id= '$fixid'";
 $result = mysqli_query($data, $sql);
 $patient_info = mysqli_fetch_array($result);
 
-$sql = "select * from costumer where id=$fixid";
+$sql = "select * from costumer where id='$fixid'";
 $result = mysqli_query($data, $sql);
 $all_P = array();
 while ($row = mysqli_fetch_assoc($result)) {
@@ -24,14 +24,14 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($all_P, $next0);
 }
 
-$sql = "select * from costumer WHERE heur > BINARY time(now()) and date >BINARY date(now()) and username =' " . $username . "'";
+$sql = "select * from costumer WHERE heur > BINARY time(now()) and date >BINARY date(now()) ";
 $result = mysqli_query($data, $sql);
 $next = array();
 while ($row = mysqli_fetch_assoc($result)) {
     $next0 = array("heur" => $row['heur'], "date" => $row['date'], "type" => $row['type de service']);
     array_push($next, $next0);
 }
-echo $next[0]['heur'];
+
 
 $sql = "select * from costumer";
 $result = mysqli_query($data, $sql);
