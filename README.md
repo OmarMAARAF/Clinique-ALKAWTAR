@@ -1,4 +1,3 @@
-
 <br />
 <div align="center">
   <a href="https://github.com/OmarMAARAF/hospital1#panneau-dadministration">
@@ -9,14 +8,16 @@
   
 </div>
 
+https://www.youtube.com/watch?v=SdZaJkHRsHA
 
-  https://www.youtube.com/watch?v=SdZaJkHRsHA
   </div>
+  <h3 >video trailer</h3>
 <div align="center">
 
 <a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
 " target="_blank"><img src="https://i.ytimg.com/vi/SdZaJkHRsHA/maxresdefault.jpg" 
 alt="IMAGE ALT TEXT HERE" width="500" height="300" border="10" /></a>
+
 </div>
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -137,7 +138,5 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 <li>Slimani Mohammed</li>
 <li>Youssef Ammari</li>
 </ul>
-
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
