@@ -6,7 +6,7 @@ $user = "root";
 $password = "";
 $db = "user";
 $data = mysqli_connect($host, $user, $password, $db);
-
+session_start();
 $fixid = $_SESSION["id"];
 $username = $_SESSION["username"];
 
