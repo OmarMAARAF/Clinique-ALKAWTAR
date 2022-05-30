@@ -9,8 +9,9 @@
   
 </div>
 <div align="center">
-[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=StTqXEQ2l-Y)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
-
+<a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
+" target="_blank"><img src="https://i.ytimg.com/vi/SdZaJkHRsHA/maxresdefault.jpg" 
+alt="IMAGE ALT TEXT HERE" width="500" height="500" border="10" /></a>
 </div>
 <!-- TABLE OF CONTENTS -->
 <details>
