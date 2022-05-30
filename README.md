@@ -8,7 +8,6 @@
   
 </div>
 
-
   </div>
  
 <div align="center">
@@ -131,6 +130,7 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Réaliser par
+
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=OmarMAARAF&show_icons=true)
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=mourabitiy&show_icons=true)
 
@@ -142,6 +142,4 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 <li>Youssef Ammari</li>
 </ul>
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
