@@ -11,7 +11,7 @@
 <div align="center">
 <a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
 " target="_blank"><img src="https://i.ytimg.com/vi/SdZaJkHRsHA/maxresdefault.jpg" 
-alt="IMAGE ALT TEXT HERE" width="500" height="500" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="500" height="300" border="10" /></a>
 </div>
 <!-- TABLE OF CONTENTS -->
 <details>
