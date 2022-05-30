@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/OmarMAARAF/hospital1#panneau-dadministration">
     <img src="./screenshots/logo-dark-text.png">
   </a>
 
