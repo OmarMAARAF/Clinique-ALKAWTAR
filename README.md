@@ -82,7 +82,6 @@ Tout membre du site possède un Panneau d'administration, auquel il peut savoir 
 ### Outils :
 
 <div id="built-with"></div>
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 - [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language)
 - [CSS3](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade#:~:text=CSS3%20devient%20%C2%AB%20modulaire%20%C2%BB%2C%20afin,des%20sous%2Densembles%20de%20CSS3.)
