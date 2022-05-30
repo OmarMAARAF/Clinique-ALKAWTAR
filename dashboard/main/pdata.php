@@ -9,9 +9,7 @@ session_start();
 $fixid = $_SESSION["id"];
 $username = $_SESSION["username"];
 
-//var asupprimer
-$fixid = 0;
-$username = "omar maaraf";
+
 
 $sql = "select * from users where id= $fixid";
 $result = mysqli_query($data, $sql);
@@ -26,7 +24,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($all_P, $next0);
 }
 
-$sql = "select * from costumer WHERE heur > time(now()) and date >date(now()) and username =' " . $username . "'";
+$sql = "select * from costumer WHERE heur > BINARY time(now()) and date >BINARY date(now()) and username =' " . $username . "'";
 $result = mysqli_query($data, $sql);
 $next = array();
 while ($row = mysqli_fetch_assoc($result)) {
