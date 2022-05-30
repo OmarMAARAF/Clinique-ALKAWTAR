@@ -9,7 +9,7 @@
   
 </div>
 <div align="center">
- [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/SdZaJkHRsHA/0.jpg)](https://youtu.be/SdZaJkHRsHA)
+[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=StTqXEQ2l-Y)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 
 </div>
 <!-- TABLE OF CONTENTS -->
