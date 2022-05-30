@@ -8,8 +8,7 @@
   <h3 align="center">Projet Clinique ALKAWTAR</h3>
 
 </div>
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/SdZaJkHRsHA)
-
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
 
 <!-- TABLE OF CONTENTS -->
 <details>
