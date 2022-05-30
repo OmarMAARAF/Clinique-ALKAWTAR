@@ -2,11 +2,9 @@
 error_reporting(E_ERROR | E_PARSE);
 header('content-Type: application/json');
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "user";
-$data = mysqli_connect($host, $user, $password, $db);
+include('../../ConnectDB.php');
+
+$data = $conn;
 $sql = "select * from costumer where sex ='homme' and date =DATE(now()) ";
 
 $result = mysqli_query($data, $sql);
