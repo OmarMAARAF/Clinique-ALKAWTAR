@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/patient_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:31 GMT -->
+<?php
+include('pdata.php')
+?>
 
 <head>
     <meta charset="utf-8">
@@ -11,14 +12,17 @@
     <meta name="author" content="">
     <link rel="icon" href="https://multipurposethemes.com/admin/doclinic-admin-template/images/favicon.ico">
     <link href="../assets/favicon/favicon.png" rel="icon">
-    <title>Doclinic - Dashboard</title>
-
+    <title>Alkawtar | Profil</title>
+    <link href="../assets/favicon/favicon.png" rel="icon">
     <!-- Vendors Style-->
     <link rel="stylesheet" href="css/vendors_css.css">
-
+    <link rel="stylesheet" href="css/calendar.css">
     <!-- Style-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skin_color.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 </head>
 
@@ -81,10 +85,12 @@
                                 data-bs-toggle="dropdown" title="User">
                                 <div class="d-flex pt-1">
                                     <div class="text-end me-10">
-                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">Johen Doe</p>
-                                        <small class="fs-10 mb-0 text-uppercase text-mute">Admin</small>
+                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">
+                                            <?php echo $username ?>
+                                        </p>
+                                        <small class="fs-10 mb-0 text-uppercase text-mute">Patient</small>
                                     </div>
-                                    <img src="../images/avatar/doctor.png"
+                                    <img src="../images/avatar/1--.png"
                                         class="avatar rounded-10 bg-primary-light h-40 w-40" alt="" />
                                 </div>
                             </a>
@@ -188,30 +194,23 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div>
-                                                <p>Email :<span class="text-gray ps-10">David@yahoo.com</span> </p>
-                                                <p>Phone :<span class="text-gray ps-10">+11 123 456 7890</span></p>
-                                                <p>Address :<span class="text-gray ps-10">123, Lorem Ipsum, Florida,
-                                                        USA</span></p>
+                                                <p>Email :<span
+                                                        class="text-gray ps-10"><?php echo $patient_info["email"] ?></span>
+                                                </p>
+                                                <p>Phone :<span
+                                                        class="text-gray ps-10"><?php echo $patient_info["phone"] ?></span>
+                                                </p>
+                                                <p>Address :<span
+                                                        class="text-gray ps-10"><?php echo $patient_info["adresse"] ?></span>
+                                                </p>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <div class="pb-15">
-                                                <p class="mb-10">Social Profile</p>
-                                                <div class="user-social-acount">
-                                                    <button class="btn btn-circle btn-social-icon btn-facebook"><i
-                                                            class="fa fa-facebook"></i></button>
-                                                    <button class="btn btn-circle btn-social-icon btn-twitter"><i
-                                                            class="fa fa-twitter"></i></button>
-                                                    <button class="btn btn-circle btn-social-icon btn-instagram"><i
-                                                            class="fa fa-instagram"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                         <div class="col-12">
                                             <div>
                                                 <div class="map-box">
                                                     <iframe
-                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805244.1745767146!2d-86.32675167439648!3d29.383165774894163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c1766591562abf%3A0xf72e13d35bc74ed0!2sFlorida%2C+USA!5e0!3m2!1sen!2sin!4v1501665415329"
+                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.170076265476!2d-1.898528284468699!3d34.65040749341715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd787cbdbf96caef%3A0x23a99f5d4e9a3161!2s%C3%89cole%20Nationale%20des%20Sciences%20Appliqu%C3%A9es!5e0!3m2!1sfr!2sma!4v1653901515026!5m2!1sfr!2sma"
                                                         class="w-p100" height="175" style="border:0"
                                                         allowfullscreen></iframe>
                                                 </div>
@@ -280,24 +279,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-between mt-15">
-                                        <a href="javascript:void(0);" class="btn btn-danger-light me-4">Unassign</a>
-                                        <a href="javascript:void(0);" class="btn btn-success-light ">Check</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-8 col-12">
-                            <div class="d-md-flex align-items-center justify-content-between mb-20">
-                                <a href="javascript:void(0);" class="btn btn-primary me-5 mb-md-0 mb-5"><i
-                                        class="fa fa-edit"></i> Edit Profile</a>
-                                <div class="d-flex">
-                                    <a href="javascript:void(0);" class="btn btn-outline btn-danger me-5"><i
-                                            class="fa fa-times-circle-o"></i> Reject Patient</a>
-                                    <a href="javascript:void(0);" class="btn btn-success"><i
-                                            class="fa fa-check-circle-o"></i> Accept Patient</a>
-                                </div>
-                            </div>
+
                             <div class="box">
                                 <div class="box-body text-end min-h-150"
                                     style="background-image:url(../images/gallery/landscape14.jpg); background-repeat: no-repeat; background-position: center;background-size: cover;">
@@ -313,9 +300,9 @@
                                             </div>
                                         </div>
                                         <div class="mt-40">
-                                            <h4 class="fw-600 mb-5">Mical Doe</h4>
-                                            <h5 class="fw-500 mb-5">#p- 12458796</h5>
-                                            <p><i class="fa fa-clock-o"></i> Admin on 15 May 2021, 10:00 AM</p>
+                                            <h4 class="fw-600 mb-5"><?php echo $patient_info["username"] ?></h4>
+                                            <p><i class="fa fa-clock-o"></i>compte créer le
+                                                <?php echo $patient_info["creat"] ?> </p>
                                         </div>
                                     </div>
                                 </div>
@@ -352,11 +339,13 @@
                                             <div class="flexbox bb-1 mb-15">
                                                 <div>
                                                     <p><span class="text-mute">Patient Name:</span>
-                                                        <strong>Jonsahn</strong></p>
+                                                        <strong>Jonsahn</strong>
+                                                    </p>
                                                 </div>
                                                 <div>
                                                     <p><span class="text-mute">Patient Id:</span>
-                                                        <strong>1254896</strong></p>
+                                                        <strong>1254896</strong>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -437,10 +426,38 @@
                                 <div class="col-xl-6 col-12">
                                     <div class="box">
                                         <div class="box-header no-border">
-                                            <h4 class="box-title">Your Statistic</h4>
+                                            <ion-icon name="calendar-outline"
+                                                style="margin-Right: 13px; width :20px ;height:20px; ">
+                                            </ion-icon>
+                                            <h4 class="box-title"> Calendrier</h4>
                                         </div>
-                                        <div class="box-body">
-                                            <div id="chart123"></div>
+                                        <div class="calendar" sty>
+                                            <div class="calendar-header">
+                                                <span class="month-picker" id="month-picker">February</span>
+                                                <div class="year-picker">
+                                                    <span class="year-change" id="prev-year">
+                                                        <pre><</pre>
+                                                    </span>
+                                                    <span id="year">2021</span>
+                                                    <span class="year-change" id="next-year">
+                                                        <pre>></pre>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="calendar-body">
+                                                <div class="calendar-week-day">
+                                                    <div>Dim</div>
+                                                    <div>Lun</div>
+                                                    <div>Mar</div>
+                                                    <div>Mer</div>
+                                                    <div>Jeu</div>
+                                                    <div>Ven</div>
+                                                    <div>Sam</div>
+                                                </div>
+                                                <div class="calendar-days"></div>
+                                            </div>
+
+                                            <div class="month-list"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -452,6 +469,7 @@
                 <!-- /.content -->
             </div>
         </div>
+        <script src="./js/calendar.js"></script>
         <!-- /.content-wrapper -->
 
 
@@ -752,6 +770,5 @@
 
 </body>
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/patient_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:31 GMT -->
 
 </html>

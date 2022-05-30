@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
-
+<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/patients.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:30 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="https://multipurposethemes.com/admin/doclinic-admin-template/images/favicon.ico">
     <link href="../assets/favicon/favicon.png" rel="icon">
 
-    <title>Doclinic - Dashboard </title>
+    <title>Liste Des Patients</title>
 
     <!-- Vendors Style-->
     <link rel="stylesheet" href="css/vendors_css.css">
@@ -42,6 +43,7 @@
                 </a>
             </div>
 
+            <!-- Header Navbar -->
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
                 <div class="app-menu">
@@ -80,12 +82,10 @@
                                 data-bs-toggle="dropdown" title="User">
                                 <div class="d-flex pt-1">
                                     <div class="text-end me-10">
-                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">
-                                            <?php echo $username ?>
-                                        </p>
-                                        <small class="fs-10 mb-0 text-uppercase text-mute">Patient</small>
+                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">Johen Doe</p>
+                                        <small class="fs-10 mb-0 text-uppercase text-mute">Admin</small>
                                     </div>
-                                    <img src="../images/avatar/1--.png"
+                                    <img src="../images/avatar/doctor.png"
                                         class="avatar rounded-10 bg-primary-light h-40 w-40" alt="" />
                                 </div>
                             </a>
@@ -114,7 +114,6 @@
                 </div>
             </nav>
         </header>
-        <!-- Left side column. contains the logo and sidebar -->
         <aside class="main-sidebar">
             <!-- sidebar-->
             <section class="sidebar position-relative">
@@ -123,7 +122,7 @@
                         <!-- sidebar menu-->
                         <ul class="sidebar-menu" data-widget="tree">
                             <li>
-                                <a href="./index-2.php">
+                                <a href="./index2.php">
                                     <i class="icon-Layout-4-blocks"><span class="path1"></span><span
                                             class="path2"></span></i>
                                     <span>Dashboard</span>
@@ -132,18 +131,25 @@
 
                             </li>
                             <li>
-                                <a href="appointments2.php">
+                                <a href="appointments.php">
                                     <i class="icon-Barcode-read"><span class="path1"></span><span
                                             class="path2"></span></i>
                                     <span>Appointments</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="./patient_details.php">
+                                <a href="./patients.php">
                                     <i class="icon-Compiling"><span class="path1"></span><span class="path2"></span></i>
-                                    <span>Profil</span>
+                                    <span>Patients</span>
                                 </a>
 
+                            </li>
+                            <li>
+                                <a href="reports.html">
+                                    <i class="icon-Settings-1"><span class="path1"></span><span
+                                            class="path2"></span></i>
+                                    <span>Rapports</span>
+                                </a>
                             </li>
 
                         </ul>
@@ -155,7 +161,10 @@
                 </div>
             </section>
         </aside>
+        <?php
+        include 'data.php';
 
+        ?>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <div class="container-full">
@@ -163,13 +172,13 @@
                 <div class="content-header">
                     <div class="d-flex align-items-center">
                         <div class="me-auto">
-                            <h4 class="page-title">Appointments</h4>
+                            <h4 class="page-title">Patients</h4>
                             <div class="d-inline-block align-items-center">
                                 <nav>
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">Appointments</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Patients</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -183,42 +192,52 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="box">
-                                <div class="box-body p-10">
-                                    <div id="calendar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="box no-border no-shadow">
-                                <div class="box-header with-border">
-                                    <h4 class="box-title">Draggable Events</h4>
-                                </div>
-                                <div class="box-body p-0">
-                                    <!-- the events -->
-                                    <div id="external-events">
-                                        <div class="external-event m-15 bg-primary" data-class="bg-primary"><i
-                                                class="fa fa-hand-o-right"></i>Lunch</div>
-                                        <div class="external-event m-15 bg-warning" data-class="bg-warning"><i
-                                                class="fa fa-hand-o-right"></i>Go home</div>
-                                        <div class="external-event m-15 bg-info" data-class="bg-info"><i
-                                                class="fa fa-hand-o-right"></i>Do homework</div>
-                                        <div class="external-event m-15 bg-success" data-class="bg-success"><i
-                                                class="fa fa-hand-o-right"></i>Work on UI design</div>
-                                        <div class="external-event m-15 bg-danger" data-class="bg-danger"><i
-                                                class="fa fa-hand-o-right"></i>Sleep tight</div>
-                                    </div>
-                                    <div class="event-fc-bt mx-15 my-20">
-                                        <!-- checkbox -->
-                                        <div class="checkbox">
-                                            <input id="drop-remove" type="checkbox">
-                                            <label for="drop-remove">
-                                                Remove after drop
-                                            </label>
-                                        </div>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#add-new-events"
-                                            class="btn btn-success w-p100 my-10">
-                                            <i class="ti-plus"></i> Add New Event
-                                        </a>
+                                <div class="box-body">
+                                    <div class="table-responsive rounded card-table">
+                                        <table class="table border-no" id="example1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Patient ID</th>
+                                                    <th>Date Check In</th>
+                                                    <th>Patient nom</th>
+                                                    <th>Docteur </th>
+                                                    <th>type de service</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php
+                                                for ($i = 0; $i < $num_P; $i++) {
+
+                                                ?>
+                                                <tr class="hover-primary">
+
+                                                    <td><?php echo $all_P[$i]['id']  ?></td>
+                                                    <td><?php echo $all_P[$i]['check_in']  ?></td>
+                                                    <td><?php echo $all_P[$i]['full_name']  ?></td>
+                                                    <td><?php echo $all_P[$i]['docteur']  ?></td>
+                                                    <?php
+                                                        if (strcmp($all_P[$i]['type'], "Consultation initiale") == 0) {
+                                                            echo "<td><span class=\"badge badge-success-light\">Consulation intiale</span></td>";
+                                                        } elseif (strcmp($all_P[$i]['type'], "Suivi gynécologique") == 0) {
+                                                            echo "<td><span class=\"badge badge-warning-light\">Suivi gynécologique</span></td>";
+                                                        } elseif (strcmp($all_P[$i]['type'], "Dossier administratif") == 0) {
+                                                            echo "<td><span class=\"badge badge-danger-light\">Dossier administratif</span></td>";
+                                                        } elseif (strcmp($all_P[$i]['type'], "Suivi de nourission et de l'enfant") == 0) {
+                                                            echo "<td><span class=\"badge badge-danger-light\">Suivi de  nourission et de l'enfant</span></td>";
+                                                        } else {
+                                                            echo "<td><span class=\"badge badge-danger-light\">autre</span></td>";
+                                                        }
+
+                                                        ?>
+
+
+
+                                                </tr>
+                                                <?php } ?>
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +246,6 @@
                 </section>
                 <!-- /.content -->
             </div>
-
         </div>
         <!-- /.content-wrapper -->
 
@@ -502,6 +520,7 @@
 
         <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
+
     </div>
     <!-- ./wrapper -->
 
@@ -519,237 +538,14 @@
     <script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 
-    <script src="../assets/vendor_components/jquery-ui/jquery-ui.min.js"></script>
-    <script src="../assets/vendor_components/perfect-scrollbar-master/perfect-scrollbar.jquery.min.e4.del"></script>
-    <script src="../assets/vendor_components/fullcalendar/lib/moment.min.js"></script>
-    <script src="../assets/vendor_components/fullcalendar/fullcalendar.min.js"></script>
+    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
 
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
-    <!--<script src="js/pages/calendar.js"></script> -->
-    <?php
-    include 'calendar2.php';
-    ?>
-    <script>
-    //[calendar Javascript]
-
-    //Project:	Doclinic - Responsive Admin Template
-    //Primary use:   Used only for the event calendar
-
-    const usersList = <?php print json_encode($usersList); ?>;
-    console.log(usersList);
-    const calendarEvents0 = usersList.map((user) => ({
-
-        title: user.title,
-        start: user.start,
-        end: user.start,
-        className: user.className
-
-    }));
-    ! function($) {
-        "use strict";
-
-        var CalendarApp = function() {
-            this.$body = $("body")
-            this.$calendar = $('#calendar'),
-                this.$event = ('#external-events div.external-event'),
-                this.$categoryForm = $('#add-new-events form'),
-                this.$extEvents = $('#external-events'),
-                this.$modal = $('#my-event'),
-                this.$saveCategoryBtn = $('.save-category'),
-                this.$calendarObj = null
-        };
-
-
-        /* on drop */
-        CalendarApp.prototype.onDrop = function(eventObj, date) {
-                var $this = this;
-                // retrieve the dropped element's stored Event Object
-                var originalEventObject = eventObj.data('eventObject');
-                var $categoryClass = eventObj.attr('data-class');
-                // we need to copy it, so that multiple events don't have a reference to the same object
-                var copiedEventObject = $.extend({}, originalEventObject);
-                // assign it the date that was reported
-                copiedEventObject.start = date;
-                if ($categoryClass)
-                    copiedEventObject['className'] = [$categoryClass];
-                // render the event on the calendar
-                $this.$calendar.fullCalendar('renderEvent', copiedEventObject, true);
-                // is the "remove after drop" checkbox checked?
-                if ($('#drop-remove').is(':checked')) {
-                    // if so, remove the element from the "Draggable Events" list
-                    eventObj.remove();
-                }
-            },
-            /* on click on event */
-            CalendarApp.prototype.onEventClick = function(calEvent, jsEvent, view) {
-                var $this = this;
-                var form = $("<form></form>");
-                form.append("<label>Change event name</label>");
-                form.append("<div class='input-group'><input class='form-control' type=text value='" + calEvent
-                    .title +
-                    "' /><span class='input-group-btn'><button type='submit' class='btn btn-success waves-effect waves-light'><i class='fa fa-check'></i> Save</button></span></div>"
-                );
-                $this.$modal.modal({
-                    backdrop: 'static'
-                });
-                $this.$modal.find('.delete-event').show().end().find('.save-event').hide().end().find('.modal-body')
-                    .empty().prepend(form).end().find('.delete-event').unbind('click').click(function() {
-                        $this.$calendarObj.fullCalendar('removeEvents', function(ev) {
-                            return (ev._id == calEvent._id);
-                        });
-                        $this.$modal.modal('hide');
-                    });
-                $this.$modal.find('form').on('submit', function() {
-                    calEvent.title = form.find("input[type=text]").val();
-                    $this.$calendarObj.fullCalendar('updateEvent', calEvent);
-                    $this.$modal.modal('hide');
-                    return false;
-                });
-            },
-            /* on select */
-            CalendarApp.prototype.onSelect = function(start, end, allDay) {
-                var $this = this;
-                $this.$modal.modal({
-                    backdrop: 'static'
-                });
-                var form = $("<form></form>");
-                form.append("<div class='row'></div>");
-                form.find(".row")
-                    .append(
-                        "<div class='col-md-6'><div class='form-group'><label class='form-label'>Event Name</label><input class='form-control' placeholder='Insert Event Name' type='text' name='title'/></div></div>"
-                    )
-                    .append(
-                        "<div class='col-md-6'><div class='form-group'><label class='form-label'>Category</label><select class='form-control' name='category'></select></div></div>"
-                    )
-                    .find("select[name='category']")
-                    .append("<option value='bg-danger'>Danger</option>")
-                    .append("<option value='bg-success'>Success</option>")
-                    .append("<option value='bg-purple'>Purple</option>")
-                    .append("<option value='bg-primary'>Primary</option>")
-                    .append("<option value='bg-pink'>Pink</option>")
-                    .append("<option value='bg-info'>Info</option>")
-                    .append("<option value='bg-warning'>Warning</option></div></div>");
-                $this.$modal.find('.delete-event').hide().end().find('.save-event').show().end().find('.modal-body')
-                    .empty().prepend(form).end().find('.save-event').unbind('click').click(function() {
-                        form.submit();
-                    });
-                $this.$modal.find('form').on('submit', function() {
-                    var title = form.find("input[name='title']").val();
-                    var beginning = form.find("input[name='beginning']").val();
-                    var ending = form.find("input[name='ending']").val();
-                    var categoryClass = form.find("select[name='category'] option:checked").val();
-                    if (title !== null && title.length != 0) {
-                        $this.$calendarObj.fullCalendar('renderEvent', {
-                            title: title,
-                            start: start,
-                            end: end,
-                            allDay: false,
-                            className: categoryClass
-                        }, true);
-                        $this.$modal.modal('hide');
-                    } else {
-                        alert('You have to give a title to your event');
-                    }
-                    return false;
-
-                });
-                $this.$calendarObj.fullCalendar('unselect');
-            },
-            CalendarApp.prototype.enableDrag = function() {
-                //init events
-                $(this.$event).each(function() {
-                    // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-                    // it doesn't need to have a start or end
-                    var eventObject = {
-                        title: $.trim($(this).text()) // use the element's text as the event title
-                    };
-                    // store the Event Object in the DOM element so we can get to it later
-                    $(this).data('eventObject', eventObject);
-                    // make the event draggable using jQuery UI
-                    $(this).draggable({
-                        zIndex: 999999,
-                        revert: true, // will cause the event to go back to its
-                        revertDuration: 0 //  original position after the drag
-                    });
-                });
-            }
-        /* Initializing */
-        CalendarApp.prototype.init = function() {
-                this.enableDrag();
-                /*  Initialize the calendar  */
-                var date = new Date();
-                var d = date.getDate();
-                var m = date.getMonth();
-                var y = date.getFullYear();
-                var form = '';
-                var today = new Date($.now());
-
-
-
-
-                var defaultEvents = calendarEvents0;
-                var $this = this;
-                $this.$calendarObj = $this.$calendar.fullCalendar({
-                    slotDuration: '00:15:00',
-                    /* If we want to split day time each 15minutes */
-                    minTime: '08:00:00',
-                    maxTime: '19:00:00',
-                    defaultView: 'month',
-                    handleWindowResize: true,
-
-                    header: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'month,agendaWeek,agendaDay'
-                    },
-                    events: defaultEvents,
-                    editable: true,
-                    droppable: true, // this allows things to be dropped onto the calendar !!!
-                    eventLimit: true, // allow "more" link when too many events
-                    selectable: true,
-                    drop: function(date) {
-                        $this.onDrop($(this), date);
-                    },
-                    select: function(start, end, allDay) {
-                        $this.onSelect(start, end, allDay);
-                    },
-                    eventClick: function(calEvent, jsEvent, view) {
-                        $this.onEventClick(calEvent, jsEvent, view);
-                    }
-
-                });
-
-                //on new event
-                this.$saveCategoryBtn.on('click', function() {
-                    var categoryName = $this.$categoryForm.find("input[name='category-name']").val();
-                    var categoryColor = $this.$categoryForm.find("select[name='category-color']").val();
-                    if (categoryName !== null && categoryName.length != 0) {
-                        $this.$extEvents.append('<div class="m-15 external-event bg-' + categoryColor +
-                            '" data-class="bg-' + categoryColor +
-                            '" style="position: relative;"><i class="fa fa-hand-o-right"></i>' +
-                            categoryName + '</div>')
-                        $this.enableDrag();
-                    }
-
-                });
-            },
-
-            //init CalendarApp
-            $.CalendarApp = new CalendarApp, $.CalendarApp.Constructor = CalendarApp
-
-    }(window.jQuery), // End of use strict
-
-    //initializing CalendarApp
-    function($) {
-        "use strict";
-        $.CalendarApp.init()
-
-    }(window.jQuery); // End of use strict
-    </script>
+    <script src="js/pages/patients.js"></script>
 
 </body>
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/appointments.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:30 GMT -->
+<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/patients.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:31 GMT -->
 
 </html>

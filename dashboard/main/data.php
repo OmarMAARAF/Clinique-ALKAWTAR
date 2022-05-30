@@ -21,7 +21,7 @@ $prfemme = 100 - $prhomme;
 
 $all = $homme + $femme;
 
-$sql = "select * from costumer where  etat ='urgent'";
+$sql = "select * from costumer where  etat ='urgent' and date = DATE(now())";
 $result = mysqli_query($data, $sql);
 $urg = mysqli_num_rows($result);
 

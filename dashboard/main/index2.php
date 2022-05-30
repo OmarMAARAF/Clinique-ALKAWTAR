@@ -12,7 +12,7 @@ $data = mysqli_connect($host, $user, $password, $db);
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:28 GMT -->
+
 
 
 <head>
@@ -67,9 +67,8 @@ $data = mysqli_connect($host, $user, $password, $db);
                 </a>
             </div>
 
-            <!-- Header Navbar -->
+
             <nav class="navbar navbar-static-top">
-                <!-- Sidebar toggle button-->
                 <div class="app-menu">
                     <ul class="header-megamenu nav">
                         <li class="btn-group nav-item">
@@ -106,7 +105,7 @@ $data = mysqli_connect($host, $user, $password, $db);
                                 data-bs-toggle="dropdown" title="User">
                                 <div class="d-flex pt-1">
                                     <div class="text-end me-10">
-                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">Johen Doe</p>
+                                        <p class="pt-5 fs-14 mb-0 fw-700 text-primary">Omar Maaraf</p>
                                         <small class="fs-10 mb-0 text-uppercase text-mute">Admin</small>
                                     </div>
                                     <img src="../images/avatar/doctor.png"
@@ -129,9 +128,6 @@ $data = mysqli_connect($host, $user, $password, $db);
                                 <i class="icon-Position"></i>
                             </a>
                         </li>
-                        <!-- Notifications -->
-
-                        <!-- Control Sidebar Toggle Button -->
 
 
                     </ul>
@@ -187,7 +183,7 @@ $data = mysqli_connect($host, $user, $password, $db);
             </section>
         </aside>
 
-        <!-- Content Wrapper. Contains page content -->
+
         <div class="content-wrapper">
             <div class="container-full">
                 <!-- Main content -->
@@ -561,7 +557,7 @@ $data = mysqli_connect($host, $user, $password, $db);
                         <div class="col-xl-4 col-12">
                             <div class="box">
                                 <div class="box-header">
-                                    <h4 class="box-title">Analytics</h4>
+                                    <h4 class="box-title">Des analyses</h4>
                                 </div>
                                 <div class="box-body ps-0">
                                     <div id="overview_trend"></div>
@@ -571,7 +567,9 @@ $data = mysqli_connect($host, $user, $password, $db);
                         <div class="col-xl-4 col-12">
                             <div class="box">
                                 <div class="box-header">
-                                    <h4 class="box-title">Appointments Overview</h4>
+                                    <h4 class="box-title">Informations des Patients
+
+                                    </h4>
                                 </div>
                                 <div class="box-body">
                                     <div id="chart432"></div>
@@ -581,7 +579,7 @@ $data = mysqli_connect($host, $user, $password, $db);
                         <div class="col-xl-4 col-12">
                             <div class="box">
                                 <div class="box-header">
-                                    <h4 class="box-title">Overal appointment</h4>
+                                    <h4 class="box-title">Horaire des appointements</h4>
                                 </div>
                                 <div class="box-body">
                                     <div id="appointment_overview"></div>
@@ -1151,6 +1149,5 @@ $data = mysqli_connect($host, $user, $password, $db);
     <script src="notes.js"></script>
 </body>
 
-<!-- Mirrored from multipurposethemes.com/admin/doclinic-admin-template/main/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 13:54:29 GMT -->
 
 </html>
