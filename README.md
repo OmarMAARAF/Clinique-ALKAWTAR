@@ -6,10 +6,11 @@
   </a>
 
   <h3 align="center">Projet Clinique ALKAWTAR</h3>
-
+  
 </div>
 <div align="center">
-  <iframe width="560" height="315" src="https://youtu.be/SdZaJkHRsHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/SdZaJkHRsHA/0.jpg)](https://youtu.be/SdZaJkHRsHA)
+
 </div>
 <!-- TABLE OF CONTENTS -->
 <details>
