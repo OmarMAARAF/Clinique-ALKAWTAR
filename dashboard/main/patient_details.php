@@ -220,56 +220,18 @@ include('pdata.php')
                                 </div>
                                 <!-- /.box-body -->
                             </div>
-                            <div class="box">
-                                <div class="box-header border-0 pb-0">
-                                    <h4 class="box-title">Disease History</h4>
-                                </div>
-                                <div class="box-body">
-                                    <div class="widget-timeline-icon">
-                                        <ul>
-                                            <li>
-                                                <div class="icon bg-primary fa fa-heart-o"></div>
-                                                <a class="timeline-panel text-muted" href="#">
-                                                    <h4 class="mb-2 mt-1">Diabetes</h4>
-                                                    <p class="fs-15 mb-0 ">mon, 18 Mar 2021, 11:15 AM</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="icon bg-primary fa fa-heart-o"></div>
-                                                <a class="timeline-panel text-muted" href="#">
-                                                    <h4 class="mb-2 mt-1">Sleep Problem</h4>
-                                                    <p class="fs-15 mb-0 ">Tue, 21 Jun 2020, 03:22 PM</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="icon bg-primary fa fa-heart-o"></div>
-                                                <a class="timeline-panel text-muted" href="#">
-                                                    <h4 class="mb-2 mt-1">Dental Care</h4>
-                                                    <p class="fs-15 mb-0 ">Wed, 15 Mar 2020, 02:11 PM</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="icon bg-primary fa fa-heart-o"></div>
-                                                <a class="timeline-panel text-muted" href="#">
-                                                    <h4 class="mb-2 mt-1">Diabetes</h4>
-                                                    <p class="fs-15 mb-0 ">Sun, 11 Jan 2020, 12:24 PM</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="box">
                                 <div class="box-header">
                                     <h4 class="box-title">Assigned Doctor</h4>
                                 </div>
                                 <div class="box-body">
                                     <div class="d-flex align-items-center">
-                                        <img src="../images/avatar/avatar-10.png"
-                                            class="w-100 bg-primary-light rounded10 me-15" alt="" />
+                                        <img src="
+											../images/avatar/doctor.png" class="w-100 bg-primary-light rounded10 me-15" alt="" />
                                         <div>
-                                            <h4 class="mb-0">Dr. Johen Doe</h4>
-                                            <p class="text-muted">Physician</p>
+                                            <h4 class="mb-0">Dr. Omar MAARAF</h4>
+                                            <p class="text-muted">Cardiologists</p>
                                             <div class="d-flex">
                                                 <i class="text-warning fa fa-star"></i>
                                                 <i class="text-warning fa fa-star"></i>
@@ -292,8 +254,8 @@ include('pdata.php')
                                 <div class="box-body wed-up position-relative">
                                     <div class="d-md-flex align-items-center">
                                         <div class=" me-20 text-center text-md-start">
-                                            <img src="../images/avatar/2.jpg" class="bg-success-light rounded10"
-                                                alt="" />
+                                            <img src="../images/avatar/1--.png" class="bg-success-light rounded10"
+                                                alt="" style="width: 120px;" />
                                             <div class="text-center my-10">
                                                 <p class="mb-0">Disease</p>
                                                 <h4>Cold & Flu</h4>
