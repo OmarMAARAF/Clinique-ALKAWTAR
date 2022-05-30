@@ -129,7 +129,7 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 <li>Slimani Mohammed</li>
 <li>Youssef Ammari</li>
 </ul>
-[![willianrod's wakatime stats]([https://github-readme-stats.vercel.app/api/wakatime?username=willianrod]([https://github.com/OmarMAARAF/Clinique-ALKAWTAR](https://github.com/OmarMAARAF/Clinique-ALKAWTAR)))](https://github.com/anuraghazra/github-readme-stats)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
