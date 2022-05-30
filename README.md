@@ -1,4 +1,4 @@
-# hospital1
+d# hospital1
 
 <br />
 <div align="center">
@@ -28,7 +28,7 @@
       </ul>
     </li>
     <li>
-      <a href="#about-the-project">Réaliser par</a>
+      <a href="#realiser">Réaliser par</a>
     </li>
     
   </ol>
@@ -38,6 +38,7 @@
 
 ## A propos du projets
 
+<div id="about-the-project"></div>
 <img src="./screenshots/main.png">
 
 Il s'agit d'une application web de gestion d'une clinique programmée en divers langagues a titre exemple PHP , JS ... et reliée à une base de données Mysql en ligne (cloud).
@@ -70,6 +71,7 @@ Tout membre du site possède un Panneau d'administration, auquel il peut savoir 
 
 ### Outils :
 
+<div id="built-with"></div>
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 - [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language)
@@ -86,10 +88,13 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 ## Les informations du admin et user
 
+<div id="getting-started"></div>
+
 Pour vous facilitez la tache à accéder au compt on deja créer dans comptes dans notre base de données vous pouviez les accéder pars les inforamtions suivant:
 
 ### Admin
 
+<div id="prerequisites"></div>
 - email
   ```sh
   mourabitiyoussef@gmail.com
@@ -101,6 +106,7 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 
 ### user
 
+<div id="installation"></div>
 - email
   ```sh
   omar@mail.com
@@ -114,9 +120,12 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 
 ### Réaliser par
 
+<div id="realiser"></div>
 <ul>
 <li>Omar MAARAF</li>
 <li>Youssef Mourabiti</li>
 <li>Slimani Mohammed</li>
 <li>Youssef Ammari</li>
 </ul>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
