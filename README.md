@@ -6,7 +6,7 @@
     <img src="./screenshots/logo-dark-text.png">
   </a>
 
-  <h3 align="center">Projet Clinique ALkawtar</h3>
+  <h3 align="center">Projet Clinique ALKAWTAR</h3>
 
 </div>
 
