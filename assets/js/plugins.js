@@ -3425,8 +3425,8 @@ HTMLurl = document.querySelectorAll(".news-link");
 fetch("https://current-news.p.rapidapi.com/news/health", {
         "method": "GET",
         "headers": {
-            "x-rapidapi-host": "current-news.p.rapidapi.com",
-            "x-rapidapi-key": "146002d0c1mshdb8cd154cf8ae71p174e32jsn69a57b4a5940"
+            'X-RapidAPI-Host': 'current-news.p.rapidapi.com',
+            'X-RapidAPI-Key': '20abde97e3msh7ebf2ff1c0ecefdp12142djsnb7247ca446b9'
         }
     })
     .then(response => {

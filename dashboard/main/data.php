@@ -1,11 +1,10 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
-
 header('content-Type: application/json');
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "user";
+$host = "sql11.freesqldatabase.com";
+$user = "sql11496381";
+$password = "IURWgmMvUY";
+$db = "sql11496381";
 $data = mysqli_connect($host, $user, $password, $db);
 $sql = "select * from costumer where sex ='homme' and date =DATE(now()) ";
 
@@ -101,7 +100,7 @@ $sql = "select * from costumer where  heur>='16:00' and heur<'17:00'";
 $result = mysqli_query($data, $sql);
 $h_16 = mysqli_num_rows($result);
 
-$sql = "select * from costumer WHERE heur >time(now()) and date =date(now()) ORDER by heur , date   limit 3";
+$sql = "select * from costumer WHERE BINARY  heur > BINARY time(now()) and BINARY  date = BINARY date(now()) ORDER by heur , date   limit 3";
 $result = mysqli_query($data, $sql);
 $num = mysqli_num_rows($result);
 $next = array();
