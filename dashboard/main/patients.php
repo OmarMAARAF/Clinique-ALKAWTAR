@@ -31,7 +31,7 @@
 
             <div class="d-flex align-items-center logo-box justify-content-start">
                 <!-- Logo -->
-                <a href="index-2.html" class="logo">
+                <a href="../../index.html" class="logo">
                     <!-- logo-->
 
 
@@ -48,7 +48,8 @@
                 <div class="app-menu">
                     <ul class="header-megamenu nav">
                         <li class="btn-group nav-item">
-                            <a href="#" class="waves-effect waves-light nav-link push-btn btn-primary-light" data-toggle="push-menu" role="button">
+                            <a href="#" class="waves-effect waves-light nav-link push-btn btn-primary-light"
+                                data-toggle="push-menu" role="button">
                                 <i class="icon-Menu"><span class="path1"></span><span class="path2"></span></i>
                             </a>
                         </li>
@@ -59,7 +60,9 @@
                                         <div class="input-group">
                                             <input type="search" class="form-control" placeholder="Search">
                                             <div class="input-group-append">
-                                                <button class="btn" type="submit" id="button-addon3"><i class="icon-Search"><span class="path1"></span><span class="path2"></span></i></button>
+                                                <button class="btn" type="submit" id="button-addon3"><i
+                                                        class="icon-Search"><span class="path1"></span><span
+                                                            class="path2"></span></i></button>
                                             </div>
                                         </div>
                                     </form>
@@ -73,13 +76,16 @@
                     <ul class="nav navbar-nav">
                         <!-- User Account-->
                         <li class="dropdown user user-menu">
-                            <a href="#" class="waves-effect waves-light dropdown-toggle w-auto l-h-12 bg-transparent p-0 no-shadow" data-bs-toggle="dropdown" title="User">
+                            <a href="#"
+                                class="waves-effect waves-light dropdown-toggle w-auto l-h-12 bg-transparent p-0 no-shadow"
+                                data-bs-toggle="dropdown" title="User">
                                 <div class="d-flex pt-1">
                                     <div class="text-end me-10">
                                         <p class="pt-5 fs-14 mb-0 fw-700 text-primary">Omar MAARAF</p>
                                         <small class="fs-10 mb-0 text-uppercase text-mute">Admin</small>
                                     </div>
-                                    <img src="../images/avatar/doctor.png" class="avatar rounded-10 bg-primary-light h-40 w-40" alt="" />
+                                    <img src="../images/avatar/doctor.png"
+                                        class="avatar rounded-10 bg-primary-light h-40 w-40" alt="" />
                                 </div>
                             </a>
                             <ul class="dropdown-menu animated flipInX">
@@ -92,7 +98,9 @@
                             </ul>
                         </li>
                         <li class="btn-group nav-item d-lg-inline-flex d-none">
-                            <a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link full-screen btn-warning-light" title="Full Screen">
+                            <a href="#" data-provide="fullscreen"
+                                class="waves-effect waves-light nav-link full-screen btn-warning-light"
+                                title="Full Screen">
                                 <i class="icon-Position"></i>
                             </a>
                         </li>
@@ -114,7 +122,8 @@
                         <ul class="sidebar-menu" data-widget="tree">
                             <li>
                                 <a href="./index2.php">
-                                    <i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>
+                                    <i class="icon-Layout-4-blocks"><span class="path1"></span><span
+                                            class="path2"></span></i>
                                     <span>Dashboard</span>
 
                                 </a>
@@ -122,7 +131,8 @@
                             </li>
                             <li>
                                 <a href="appointments.php">
-                                    <i class="icon-Barcode-read"><span class="path1"></span><span class="path2"></span></i>
+                                    <i class="icon-Barcode-read"><span class="path1"></span><span
+                                            class="path2"></span></i>
                                     <span>Appointments</span>
                                 </a>
                             </li>
@@ -193,13 +203,13 @@
                                                 for ($i = 0; $i < $num_P; $i++) {
 
                                                 ?>
-                                                    <tr class="hover-primary">
+                                                <tr class="hover-primary">
 
-                                                        <td><?php echo $all_P[$i]['id']  ?></td>
-                                                        <td><?php echo $all_P[$i]['check_in']  ?></td>
-                                                        <td><?php echo $all_P[$i]['full_name']  ?></td>
-                                                        <td><?php echo $all_P[$i]['docteur']  ?></td>
-                                                        <?php
+                                                    <td><?php echo $all_P[$i]['id']  ?></td>
+                                                    <td><?php echo $all_P[$i]['check_in']  ?></td>
+                                                    <td><?php echo $all_P[$i]['full_name']  ?></td>
+                                                    <td><?php echo $all_P[$i]['docteur']  ?></td>
+                                                    <?php
                                                         if (strcmp($all_P[$i]['type'], "Consultation initiale") == 0) {
                                                             echo "<td><span class=\"badge badge-success-light\">Consulation intiale</span></td>";
                                                         } elseif (strcmp($all_P[$i]['type'], "Suivi gynécologique") == 0) {
@@ -216,7 +226,7 @@
 
 
 
-                                                    </tr>
+                                                </tr>
                                                 <?php } ?>
 
                                             </tbody>
@@ -236,11 +246,14 @@
         <!-- Control Sidebar -->
         <aside class="control-sidebar">
 
-            <div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger" data-toggle="control-sidebar"><i class="ion ion-close text-white"></i></span> </div>
+            <div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"
+                    data-toggle="control-sidebar"><i class="ion ion-close text-white"></i></span> </div>
             <!-- Create the tabs -->
             <ul class="nav nav-tabs control-sidebar-tabs">
-                <li class="nav-item"><a href="#control-sidebar-home-tab" data-bs-toggle="tab" class="active"><i class="mdi mdi-message-text"></i></a></li>
-                <li class="nav-item"><a href="#control-sidebar-settings-tab" data-bs-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
+                <li class="nav-item"><a href="#control-sidebar-home-tab" data-bs-toggle="tab" class="active"><i
+                            class="mdi mdi-message-text"></i></a></li>
+                <li class="nav-item"><a href="#control-sidebar-settings-tab" data-bs-toggle="tab"><i
+                            class="mdi mdi-playlist-check"></i></a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">

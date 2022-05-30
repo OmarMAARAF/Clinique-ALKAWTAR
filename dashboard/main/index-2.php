@@ -35,7 +35,7 @@ include('pdata.php')
 
             <div class="d-flex align-items-center logo-box justify-content-start">
                 <!-- Logo -->
-                <a href="index-2.html" class="logo">
+                <a href="../../index.html" class="logo">
                     <!-- logo-->
 
 
