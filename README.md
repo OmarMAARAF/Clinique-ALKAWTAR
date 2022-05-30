@@ -52,14 +52,6 @@ Omar Maaraf :
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -72,7 +64,7 @@ Omar Maaraf :
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Sommaire</summary>
   <ol>
     <li>
       <a href="#about-the-project">A propos du projets</a>
@@ -93,34 +85,47 @@ Omar Maaraf :
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## A propos du projets
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Il s'agit d'une application web de gestion d'une clinique programmée en divers langagues a titre exemple PHP , JS ... et reliée à une base de données Mysql en ligne (cloud).
 
-Here's why:
+<center>Exigences fonctionnelles</center>
+<ul>
+<li>
+<h1>Inscription</h1>
 
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
+Un internaute peut s’inscrire uniquement s’il prend un rdv chez un des Docteurs de notre clinique et cela par le remplissage d'un formulaire
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+</li>
 
-Use the `BLANK_README.md` to get started.
+<li>
+<h1>Authentification</h1>
+
+Afin d’accéder au site et pouvoir accéder aux différentes fonctionnalités,
+tout membre doit s’authentifier(Docteur,Patient ).
+
+</li>
+
+<li>
+<h1>Panneau d'administration</h1>
+
+Tout membre du site possède un Panneau d'administration, auquel il peut savoir des informations générales a l'aide de différents diagrammes (nombre des patient par jour , etat des patients ...).
+
+</li>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Built With
+### Construit par :
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-- [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
+- [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language)
+- [CSS3](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade#:~:text=CSS3%20devient%20%C2%AB%20modulaire%20%C2%BB%2C%20afin,des%20sous%2Densembles%20de%20CSS3.)
+- [js](https://www.javascript.com/)
+- [MYSQL](https://www.mysql.com/fr/)
+- [PHP](https://www.php.net/)
 - [Bootstrap](https://getbootstrap.com)
 - [JQuery](https://jquery.com)
 
