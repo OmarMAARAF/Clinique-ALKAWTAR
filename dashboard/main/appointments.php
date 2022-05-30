@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="../assets/favicon/favicon.png" rel="icon">
-    <title>Calendrier Des Appointements</title>
+    <title>ALKATAR |Calendrier Des Appointements</title>
 
     <!-- Vendors Style-->
     <link rel="stylesheet" href="css/vendors_css.css">
