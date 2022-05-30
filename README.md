@@ -8,12 +8,13 @@
   
 </div>
 
-https://www.youtube.com/watch?v=SdZaJkHRsHA
 
   </div>
-  <center>
-  <h3 >video trailer</h3></center>
+ 
 <div align="center">
+  <h2>VIDEO TRAILER</h2>
+  <br/>
+  https://www.youtube.com/watch?v=SdZaJkHRsHA
 
 <a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
 " target="_blank"><img src="https://i.ibb.co/bQzsjH2/Screenshot-11.png" 
@@ -130,6 +131,8 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Réaliser par
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=OmarMAARAF&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=mourabitiy&show_icons=true)
 
 <div id="realiser"></div>
 <ul>
@@ -139,4 +142,6 @@ Pour vous facilitez la tache à accéder au compt on deja créer dans comptes da
 <li>Youssef Ammari</li>
 </ul>
 
+
 <p align="right">(<a href="#top">back to top</a>)</p>
+
