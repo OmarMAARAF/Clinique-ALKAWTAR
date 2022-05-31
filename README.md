@@ -16,8 +16,8 @@
   https://www.youtube.com/watch?v=SdZaJkHRsHA
 
 <a href="https://www.youtube.com/watch?v=SdZaJkHRsHA
-" target="_blank"><img src="https://i.ibb.co/bQzsjH2/Screenshot-11.png" 
-alt="IMAGE ALT TEXT HERE" width="500" height="300" border="10" /></a>
+" target="_blank"><img src="https://i.ibb.co/rsLPPvG/6052675.jpg" 
+alt="IMAGE ALT TEXT HERE" width="700" height="400" border="10" /></a>
 
 </div>
 <!-- TABLE OF CONTENTS -->
