@@ -101,7 +101,7 @@ Tout membre du site possède un Panneau d'administration, ou il peut voir les in
 
 Pour vous facilitez la tache à accéder aux comptes on déja créer des comptes dans notre base de données vous pouviez les accéder par les inforamtions suivantes:
 
-### Admin
+### User
 
 <div id="prerequisites"></div>
 
@@ -114,7 +114,7 @@ Pour vous facilitez la tache à accéder aux comptes on déja créer des comptes
   1234
   ```
 
-### user
+### Admin
 
 <div id="installation"></div>
 
