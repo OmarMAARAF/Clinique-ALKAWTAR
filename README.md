@@ -134,9 +134,9 @@ Pour vous facilitez la tache à accéder aux comptes on déja créer des comptes
 <div id="realiser"></div>
 <ul>
 <li>Omar MAARAF</li>
-<li>Youssef Mourabiti</li>
-<li>Slimani Mohammed</li>
-<li>Youssef Ammari</li>
+<li>Youssef MOURABITI</li>
+<li>SLIMANI Mohammed</li>
+<li>Youssef AMMARI</li>
 </ul>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
