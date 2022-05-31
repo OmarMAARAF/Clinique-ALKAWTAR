@@ -73,7 +73,7 @@ tout membre doit s’authentifier(Docteur,Patient ).
 <li>
 <h1>Panneau d'administration</h1>
 
-Tout membre du site possède un Panneau d'administration, auquel il peut savoir des informations générales a l'aide de différents diagrammes (nombre des patient par jour , etat des patients ...).
+Tout membre du site possède un Panneau d'administration, auquel il peut voir les informations de son compte à l'aide de différents diagrammes (nombre des patient par jour , etat des patients ...).
 
 </li>
 
@@ -99,7 +99,7 @@ Tout membre du site possède un Panneau d'administration, auquel il peut savoir 
 
 <div id="getting-started"></div>
 
-Pour vous facilitez la tache à accéder au compt on deja créer dans comptes dans notre base de données vous pouviez les accéder pars les inforamtions suivant:
+Pour vous facilitez la tache à accéder aux comptes on déja créer des comptes dans notre base de données vous pouviez les accéder par les inforamtions suivantes:
 
 ### Admin
 
