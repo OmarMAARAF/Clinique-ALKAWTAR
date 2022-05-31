@@ -65,15 +65,15 @@ Un internaute peut s’inscrire uniquement s’il prend un rdv chez un des Docte
 <li>
 <h1>Authentification</h1>
 
-Afin d’accéder au site et pouvoir accéder aux différentes fonctionnalités,
-tout membre doit s’authentifier(Docteur,Patient ).
+Afin de se connecter au comptes et pouvoir accéder aux différentes fonctionnalités,
+tout membre (Docteur,Patient )doit s’authentifier par un email et mot de passe puis va étre rediriger vers l'espace qu'il lui convient.
 
 </li>
 
 <li>
 <h1>Panneau d'administration</h1>
 
-Tout membre du site possède un Panneau d'administration, auquel il peut voir les informations de son compte à l'aide de différents diagrammes (nombre des patient par jour , etat des patients ...).
+Tout membre du site possède un Panneau d'administration, ou il peut voir les informations de son compte à l'aide de différents diagrammes (nombre des patient par jour , etat des patients ...).
 
 </li>
 
