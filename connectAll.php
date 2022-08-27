@@ -12,8 +12,8 @@ function send_email($message, $email){
     $mail->isSMTP();                        // Set mailer to use SMTP
     $mail->Host       = "smtp.gmail.com";    // Specify main SMTP server
     $mail->SMTPAuth   = true;               // Enable SMTP authentication
-    $mail->Username   = 'clinic.alkawtar@gmail.com';     // SMTP username
-    $mail->Password = 'bustedaswhatSheBat';   // SMTP password
+    $mail->Username   = '';     // SMTP username
+    $mail->Password = '';   // SMTP password
     $mail->Port       = 587;                // TCP port to connect to
     $mail->setFrom('clinic.alkawtar@gmail.com', 'Clinique Alkawtar');           // Set sender of the mail
     $mail->addAddress($email);           // Add a recipient
